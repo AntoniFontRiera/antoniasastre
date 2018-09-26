@@ -112,9 +112,23 @@
             </div>
         </div>
     </div>
+    <div class="modul-5 margeSuperiorL margeInferiorL scrollreveal">
+        <div class="swiper-container wrapper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(img/fotoslider-1.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(img/img-full.jpg)"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modul-6 margeSuperiorL margeInferiorL scrollreveal">
+        <div class="wrapper">
+
+        </div>
+    </div>
     <div class="modul-4 margeSuperiorL scrollreveal">
         <img src="img/img-full.jpg" alt="descripcio" class="imgFull scrollreveal">
     </div>
+
 
     <footer class="scrollreveal">
         <ul>
@@ -204,6 +218,16 @@
                 $("nav").fadeToggle();
             });
 
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: {
+                    delay: 3000,
+                },
+                keyboard: true,
+                loop: true,
+                effect: 'fade',
+                speed: 500,
+            });
+
         });
 
 
@@ -218,7 +242,6 @@
                 $("#sticky").fadeOut();
             }
         });
-
     </script>
 
 </body>
