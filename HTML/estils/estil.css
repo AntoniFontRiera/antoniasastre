@@ -327,11 +327,8 @@ nav #creu .material-icons:hover {
 .modul-3 h2 {
   margin-left: 40vw;
 }
-.modul-5 .swiper-wrapper,
-.modul-5 swiper-slide {
-  height: 80vh;
+.modul-5 .swiper-wrapper img,
+.modul-5 swiper-slide img {
   width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
 }
