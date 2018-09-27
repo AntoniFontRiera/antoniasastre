@@ -1,0 +1,28 @@
+fields:
+    title:
+        label: Titulo
+        span: auto
+        type: text
+    description:
+        label: Descripción
+        size: huge
+        span: auto
+        type: textarea
+    principal_image:
+        label: 'Imatge Principal'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    gallery:
+        label: Galeria
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

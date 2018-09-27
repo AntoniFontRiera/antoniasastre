@@ -1,0 +1,11 @@
+plugin:
+    name: 'bmut.antsastre::lang.plugin.name'
+    description: 'bmut.antsastre::lang.plugin.description'
+    author: Bmut
+    icon: oc-icon-bank
+    homepage: ''
+navigation:
+    Proyectos:
+        label: Proyectos
+        url: bmut/antsastre/projects
+        icon: icon-building
