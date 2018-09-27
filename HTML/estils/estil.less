@@ -133,6 +133,28 @@ aside {
     display: flex;
 }
 
+.flexContainerTxtPhoto {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    div {
+        max-width: 50%;
+
+        p {
+            padding-right: @margeXl;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.flexPhoto {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 
@@ -420,7 +442,13 @@ nav {
     swiper-slide {
         img {
             width: 100%;
-            height: auto;
+            height: 75vh;
+            object-fit: cover;
         }
+    }
+
+    .controlSlider {
+        padding-top: @margeS;
+        text-align: right;
     }
 }
