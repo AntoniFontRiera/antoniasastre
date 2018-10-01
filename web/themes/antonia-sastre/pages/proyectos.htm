@@ -2,7 +2,18 @@ title = "Projects"
 url = "/projects"
 layout = "default"
 is_hidden = 0
+==
 
+<?php
+
+use bmut\antsastre\Models\Project;
+
+function onStart(){
+
+$this['projects'] = Project::get();
+dd($this['projects']);
+}
+?>
 ==
 <main class="scrollreveal">
         <div class="margeRelSuperiorM">

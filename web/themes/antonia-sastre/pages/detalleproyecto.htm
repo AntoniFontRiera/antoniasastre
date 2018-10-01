@@ -2,7 +2,18 @@ title = "Projects"
 url = "/projects/:slug"
 layout = "default"
 is_hidden = 0
+==
 
+<?php
+
+use bmut\antsastre\Models\Project;
+
+function onStart(){
+
+$this['projects'] = Project::get();
+
+}
+?>
 ==
 <div class="modul-1 margeRelSuperiorL margeRelInferiorXl scrollreveal" style="background-image: url(img/img-modul-1.jpg)">
         <div class="wrapper">
