@@ -116,10 +116,20 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/fotoslider-1.jpg" alt="descripcio">
+                    <picture>
+                        <source srcset="img/fotoslider-1.jpg" media="(max-width: 420px)">
+                        <source srcset="img/fotoslider-1.jpg" media="(max-width: 1024px)">
+                        <source srcset="img/fotoslider-1.jpg">
+                        <img srcset="img/fotoslider-1.jpg" alt="Descripcio">
+                    </picture>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/fotoslider-2.jpg" alt="descripcio">
+                    <picture>
+                        <source srcset="img/fotoslider-2.jpg" media="(max-width: 420px)">
+                        <source srcset="img/fotoslider-2.jpg" media="(max-width: 1024px)">
+                        <source srcset="img/fotoslider-2.jpg">
+                        <img srcset="img/fotoslider-2.jpg" alt="Descripcio">
+                    </picture>
                 </div>
             </div>
         </div>

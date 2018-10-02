@@ -80,11 +80,16 @@
     </header>
     <main class="bordeInferior">
         <article class="wrapper">
-            <div class="ample60 margeRelSuperiorXl scrollreveal">
+            <div class="ample60 margeRelSuperiorXl">
                 <h1>Arquitectura innovadora & diseño integrado</h1>
             </div>
         </article>
-        <img src="img/img-full.jpg" alt="descripcio" class="imgFull scrollreveal">
+        <picture class="imgFull">
+            <source srcset="img/img-full.jpg" media="(max-width: 420px)">
+            <source srcset="img/img-full.jpg" media="(max-width: 1024px)">
+            <source srcset="img/img-full.jpg">
+            <img srcset="img/img-full.jpg" alt="Descripcio">
+        </picture>
         <article class="wrapper scrollreveal">
             <div class="ample60 margeSuperiorXl margeInferiorXl">
                 <h6>Sobre Nosotros</h6>
@@ -96,7 +101,12 @@
     </main>
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="img/img-llistat-projectes.jpg" alt="descripcio">
+            <picture>
+                <source srcset="img/img-llistat-projectes-small.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-llistat-projectes-med.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-llistat-projectes.jpg">
+                <img srcset="img/img-llistat-projectes.jpg" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -108,7 +118,12 @@
     </aside>
     <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
-            <img src="img/img-llistat-projectes.jpg" alt="descripcio">
+            <picture>
+                <source srcset="img/img-llistat-projectes-small.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-llistat-projectes-med.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-llistat-projectes.jpg">
+                <img srcset="img/img-llistat-projectes.jpg" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -120,7 +135,12 @@
     </aside>
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="img/img-llistat-projectes.jpg" alt="descripcio">
+            <picture>
+                <source srcset="img/img-llistat-projectes-small.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-llistat-projectes-med.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-llistat-projectes.jpg">
+                <img srcset="img/img-llistat-projectes.jpg" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -211,7 +231,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.4/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -238,6 +257,7 @@
                 $("#sticky").fadeOut();
             }
         });
+
     </script>
 
 </body>
