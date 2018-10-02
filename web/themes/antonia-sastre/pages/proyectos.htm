@@ -11,76 +11,53 @@ use bmut\antsastre\Models\Project;
 function onStart(){
 
 $this['projects'] = Project::get();
-
 }
 ?>
 ==
 
 {% for project in projects %}
-
 {% if loop.first %}
 
 <main class="scrollreveal">
         <div class="margeRelSuperiorM">
-            <div class="fotoFonsFull" style="background-image:url('{{'assets/img/img-full.jpg'|theme}}')">
+            <div class="fotoFonsFull" style="background-image:url('{{project.principal_image.getPath()}}')">
                 <div class="wrapper margeRelSuperiorL textBlanc">
                     <div class="ample60">
                         <h1>{{project.title}}</h1>
-                        <p class="ample40">{{project.description}}</p>
-                        <a href="{{'detalleproyecto' |page({slug: project.id})}}"><i class="material-icons">add</i></a>
+                        <p class="ample40">{{project.description|slice(0,120)|raw}}</p>
+                        <a href="{{'detalleproyecto' |page({slug: project.slug})}}"><i class="material-icons">add</i></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     {% else %}
+    {% if project.id % 2 == 0 %}
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="{{'project.principal_image.getPath()'|theme}}" alt="descripcio">
+            <img src="{{project.principal_image.getPath()}}" alt="descripcio">
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
-                <h2>Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism</h2>
-                <p>El proyecto recupera el eispavillon existente de 1905 que albergó los Juegos Olímpicos de 1928 y 1948. El edificio había permanecido abandonado durante varios años y se encontraba en un estado de deterioro extremo.</p>
-                <i class="material-icons">add</i>
+                <h2>{{project.title}}</h2>
+                <p>{{project.description}}</p>
+                <a href="{{'detalleproyecto' |page({slug: project.slug})}}"><i class="material-icons">add</i></a>
             </div>
         </div>
     </aside>
+    {% else %}
     <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
-            <img src="{{'project.principal_image.getPath()'|theme}}" alt="descripcio">
+            <img src="{{project.principal_image.getPath()}}" alt="descripcio">
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
-                <h2>Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism</h2>
-                <p>El proyecto recupera el eispavillon existente de 1905 que albergó los Juegos Olímpicos de 1928 y 1948. El edificio había permanecido abandonado durante varios años y se encontraba en un estado de deterioro extremo.</p>
-                <a href="detalleproyecto.html"><i class="material-icons">add</i></a>
+                <h2>{{project.title}}</h2>
+                <p>{{project.description}}</p>
+                <a href="{{'detalleproyecto' |page({slug: project.slug})}}"><i class="material-icons">add</i></a>
             </div>
         </div>
     </aside>
     {% endif %}
+    {% endif %}
     {% endfor %}
-    <!-- <aside class="llistatProjecte scrollreveal">
-        <div class="llistatFoto">
-            <img src="{{'assets/img/img-llistat-projectes.jpg'|theme}}" alt="descripcio">
-        </div>
-        <div class="llistatText alinearVerticalPare">
-            <div class="alinearVerticalFill">
-                <h2>Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism</h2>
-                <p>El proyecto recupera el eispavillon existente de 1905 que albergó los Juegos Olímpicos de 1928 y 1948. El edificio había permanecido abandonado durante varios años y se encontraba en un estado de deterioro extremo.</p>
-                <i class="material-icons">add</i>
-            </div>
-        </div>
-    </aside>
-    <aside class="llistatProjecte invertit scrollreveal">
-        <div class="llistatFoto">
-            <img src="{{'assets/img/img-llistat-projectes.jpg'|theme}}" alt="descripcio">
-        </div>
-        <div class="llistatText alinearVerticalPare">
-            <div class="alinearVerticalFill">
-                <h2>Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism</h2>
-                <p>El proyecto recupera el eispavillon existente de 1905 que albergó los Juegos Olímpicos de 1928 y 1948. El edificio había permanecido abandonado durante varios años y se encontraba en un estado de deterioro extremo.</p>
-                <a href="detalleproyecto.html"><i class="material-icons">add</i></a>
-            </div>
-        </div>
-    </aside> -->

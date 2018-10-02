@@ -1,7 +1,7 @@
 title = "Projects"
 url = "/projects/:slug"
 layout = "default"
-is_hidden = 0
+is_hslugden = 0
 ==
 
 <?php
@@ -9,16 +9,15 @@ is_hidden = 0
 use bmut\antsastre\Models\Project;
 
 function onStart(){
-    $id = $this->param('id');
-    $this['project'] = Project::where('id',$id)->first();
-
+    $slug = $this->param('slug');
+    $this['project'] = Project::where('slug',$slug)->first();
 }
 ?>
 ==
 <div class="modul-1 margeRelSuperiorL margeRelInferiorXl scrollreveal" style="background-image: url({{project.principal_image.getPath()}})">
         <div class="wrapper">
             <h1 class="ample60">{{project.title}}</h1>
-            <h2 class="ample60">Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism.</h2>
+            <h2 class="ample60">{{project.description}}</h2>
         </div>
     </div>
     <div class="modul-3 margeSuperiorL scrollreveal">
@@ -51,11 +50,13 @@ function onStart(){
     <div class="modul-5 margeSuperiorL margeInferiorL scrollreveal wrapper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
+                {% for gallery in  project.gallery %}
                 <div class="swiper-slide">
-                    <img src="img/fotoslider-1.jpg" alt="descripcio">
+                    <img src="{{gallery.getPath()}}" alt="descripcio">
                 </div>
+                {% endfor %}
                 <div class="swiper-slide">
-                    <img src="img/fotoslider-2.jpg" alt="descripcio">
+                    <img src="{{'assets/img/fotoslider-2.jpg'|theme}}" alt="descripcio">
                 </div>
             </div>
         </div>
@@ -66,5 +67,5 @@ function onStart(){
         </div>
     </div>
     <div class="modul-4 margeSuperiorL scrollreveal">
-        <img src="img/img-full.jpg" alt="descripcio" class="imgFull scrollreveal">
+        <img src="{{'assets/img/img-full.jpg'|theme}}" alt="descripcio" class="imgFull scrollreveal">
     </div>

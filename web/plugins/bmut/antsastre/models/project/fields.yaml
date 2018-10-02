@@ -3,10 +3,17 @@ fields:
         label: Titulo
         span: auto
         type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
     description:
         label: Descripción
         size: huge
-        span: auto
+        span: full
         type: textarea
     principal_image:
         label: 'Imatge Principal'
