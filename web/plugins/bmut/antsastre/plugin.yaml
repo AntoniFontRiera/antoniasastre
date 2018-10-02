@@ -9,3 +9,7 @@ navigation:
         label: Proyectos
         url: bmut/antsastre/projects
         icon: icon-building
+    Personal:
+        label: Nosotros
+        url: bmut/antsastre/persons
+        icon: icon-group
