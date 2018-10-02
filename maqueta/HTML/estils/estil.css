@@ -102,11 +102,14 @@ aside .material-icons:hover {
   justify-content: space-between;
 }
 .flexText {
-  display: flex;
+  align-items: center;
 }
 /*TAMANYS I MARGES*/
 .ample60 {
   max-width: 60vw;
+}
+.ample50 {
+  max-width: 50vw;
 }
 .ample40 {
   max-width: 40vw;
@@ -330,5 +333,14 @@ nav #creu .material-icons:hover {
 .modul-5 .swiper-wrapper img,
 .modul-5 swiper-slide img {
   width: 100%;
+  height: auto;
+}
+.modul-6 .txt {
+  box-sizing: border-box;
+  padding-right: 128px;
+}
+.modul-6 picture,
+.modul-6 img {
+  width: 40vw;
   height: auto;
 }
