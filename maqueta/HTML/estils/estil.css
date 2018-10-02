@@ -330,10 +330,14 @@ nav #creu .material-icons:hover {
 .modul-3 h2 {
   margin-left: 40vw;
 }
+.modul-5 .swiper-wrapper,
+.modul-5 swiper-slide {
+  max-height: 75vh;
+}
 .modul-5 .swiper-wrapper img,
 .modul-5 swiper-slide img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .modul-6 .txt {
   box-sizing: border-box;
@@ -343,4 +347,5 @@ nav #creu .material-icons:hover {
 .modul-6 img {
   width: 40vw;
   height: auto;
+  object-fit: scale-down;
 }
