@@ -382,6 +382,9 @@ nav #creu .material-icons:hover {
 .modul-2 .detalls ul {
   list-style: none;
 }
+.modul-2 .detalls ul li:first-of-type {
+  font-weight: 700;
+}
 .modul-3 h2 {
   margin-left: 40vw;
 }
