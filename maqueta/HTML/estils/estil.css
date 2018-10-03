@@ -124,9 +124,11 @@ aside ul li:first-of-type {
   transition: all 125ms ease-in;
   cursor: pointer;
   color: black;
+  border: none;
 }
 .material-icons:hover {
   color: red;
+  border: none;
 }
 /*ALINEACIONS*/
 .centrarHoritzontal {
@@ -343,6 +345,12 @@ nav #creu .material-icons:hover {
 .llistatProjecte a:hover {
   border: none;
 }
+.about a {
+  border: none;
+}
+.about a:hover {
+  border: none;
+}
 .invertit {
   flex-direction: row-reverse;
 }
@@ -436,7 +444,6 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
-  border: none;
 }
 .textPetit {
   font-size: 14px;
