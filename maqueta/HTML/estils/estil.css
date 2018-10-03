@@ -461,6 +461,7 @@ textarea {
   margin-left: 250px;
 }
 .boto:hover {
-  background: black;
+  background: red;
+  border: 1px solid red;
   color: white;
 }
