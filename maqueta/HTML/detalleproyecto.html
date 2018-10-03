@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="meta-description">
+    <meta name="keywords" content="keywords">
+    <meta name="robots" content="robots">
+    <meta http-equiv=”Content-Language” content=”ca”>>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -148,11 +152,13 @@
         </div>
     </div>
     <div class="modul-4 margeSuperiorL scrollreveal">
-        <img src="img/img-full.jpg" alt="descripcio" class="imgFull scrollreveal">
+        <picture>
+            <source srcset="img/img-full.jpg" media="(max-width: 420px)">
+            <source srcset="img/img-full.jpg" media="(max-width: 1024px)">
+            <source srcset="img/img-full.jpg">
+            <img srcset="img/img-full.jpg" alt="Descripcio" class="imgFull scrollreveal">
+        </picture>
     </div>
-
-
-
     <footer class="scrollreveal">
         <ul>
             <li>Instagram — LinkedIn</li>
@@ -224,12 +230,9 @@
             </div>
         </div>
     </nav>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.4/scrollreveal.min.js"></script>
-
     <script>
         $(document).ready(function() {
             ScrollReveal().reveal('.scrollreveal', {
@@ -265,8 +268,8 @@
                 $("#sticky").fadeOut();
             }
         });
-    </script>
 
+    </script>
 </body>
 
 </html>
