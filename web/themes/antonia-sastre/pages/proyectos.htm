@@ -17,7 +17,6 @@ $this['projects'] = Project::get();
 
 {% for project in projects %}
 {% if loop.first %}
-
 <main class="scrollreveal">
         <div class="margeRelSuperiorM">
             <div class="fotoFonsFull" style="background-image:url('{{project.principal_image.getPath()}}')">
