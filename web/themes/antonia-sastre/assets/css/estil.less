@@ -75,7 +75,8 @@ li {
 }
 
 article,
-aside {
+aside,
+footer {
 
     h6,
     h2,
@@ -107,6 +108,7 @@ aside {
             padding-bottom: 2px;
             border-bottom: 2px solid @colorSecundari;
         }
+
     }
 
     ul {
@@ -121,6 +123,10 @@ aside {
         }
     }
 
+}
+
+footer a {
+    font-weight: 300;
 }
 
 .textBlanc {
@@ -146,9 +152,11 @@ aside {
     .transicioRapida;
     cursor: pointer;
     color: @colorPrimari;
+    border: none;
 
     &:hover {
         color: @colorSecundari;
+        border: none;
     }
 }
 
@@ -421,6 +429,16 @@ nav {
     }
 }
 
+.about {
+    a {
+        border: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+}
+
 .invertit {
     flex-direction: row-reverse;
 }
@@ -541,7 +559,6 @@ input {
 
     &:focus {
         outline: none;
-        border: none;
     }
 }
 

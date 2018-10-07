@@ -45,14 +45,18 @@ li {
 }
 article h6,
 aside h6,
+footer h6,
 article h2,
 aside h2,
+footer h2,
 article p,
-aside p {
+aside p,
+footer p {
   margin-bottom: 48px;
 }
 article .material-icons,
-aside .material-icons {
+aside .material-icons,
+footer .material-icons {
   font-size: 48px;
   -webkit-transition: all 125ms ease-in;
   -moz-transition: all 125ms ease-in;
@@ -61,13 +65,15 @@ aside .material-icons {
   transition: all 125ms ease-in;
 }
 article .material-icons:hover,
-aside .material-icons:hover {
+aside .material-icons:hover,
+footer .material-icons:hover {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 article a,
-aside a {
+aside a,
+footer a {
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
@@ -81,21 +87,28 @@ aside a {
   cursor: pointer;
 }
 article a:hover,
-aside a:hover {
+aside a:hover,
+footer a:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid red;
 }
 article ul,
-aside ul {
+aside ul,
+footer ul {
   list-style: none;
 }
 article ul li,
-aside ul li {
+aside ul li,
+footer ul li {
   margin-left: -40px;
 }
 article ul li:first-of-type,
-aside ul li:first-of-type {
+aside ul li:first-of-type,
+footer ul li:first-of-type {
   font-weight: 700;
+}
+footer a {
+  font-weight: 300;
 }
 .textBlanc {
   color: white;
@@ -124,9 +137,11 @@ aside ul li:first-of-type {
   transition: all 125ms ease-in;
   cursor: pointer;
   color: black;
+  border: none;
 }
 .material-icons:hover {
   color: red;
+  border: none;
 }
 /*ALINEACIONS*/
 .centrarHoritzontal {
@@ -343,6 +358,12 @@ nav #creu .material-icons:hover {
 .llistatProjecte a:hover {
   border: none;
 }
+.about a {
+  border: none;
+}
+.about a:hover {
+  border: none;
+}
 .invertit {
   flex-direction: row-reverse;
 }
@@ -436,7 +457,6 @@ input {
 textarea:focus,
 input:focus {
   outline: none;
-  border: none;
 }
 .textPetit {
   font-size: 14px;
