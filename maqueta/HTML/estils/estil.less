@@ -39,6 +39,11 @@ h1 {
     font-weight: 200;
     font-size: 8vh;
     line-height: 1;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 7vh;
+    }
+
 }
 
 h2 {
@@ -56,6 +61,10 @@ li {
     font-weight: 300;
     font-size: 20px;
     line-height: 2;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 16px;
+    }
 }
 
 ::-webkit-input-placeholder {
@@ -88,6 +97,10 @@ footer {
         font-size: 48px;
         .transicioRapida;
 
+        @media screen and (max-width: 1440px) {
+            font-size: 40px;
+        }
+
         &:hover {
             -ms-transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
@@ -103,6 +116,11 @@ footer {
         border-bottom: 2px solid @colorPrimari;
         color: @colorPrimari;
         cursor: pointer;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 16px;
+        }
+
 
         &:hover {
             padding-bottom: 2px;
@@ -154,6 +172,10 @@ footer a {
     color: @colorPrimari;
     border: none;
 
+    @media screen and (max-width: 1440px) {
+        font-size: 40px;
+    }
+
     &:hover {
         color: @colorSecundari;
         border: none;
@@ -170,6 +192,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .alinearVerticalFill {
@@ -179,6 +202,9 @@ footer a {
 .flexContainer {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1440px) {}
+
 }
 
 .flexText {
@@ -190,15 +216,19 @@ footer a {
 
 /*TAMANYS I MARGES*/
 .ample60 {
-    max-width: 60vw;
+    max-width: 60%;
 }
 
 .ample50 {
-    max-width: 50vw;
+    max-width: 50%;
+
+    @media screen and (max-width: 1440px) {
+        max-width: 60%;
+    }
 }
 
 .ample40 {
-    max-width: 40vw;
+    max-width: 40%;
 }
 
 .fullHeihgt {
@@ -208,38 +238,77 @@ footer a {
 .imgFull {
     width: 100%;
     height: auto;
+
+    img {
+        object-fit: scale-down;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .margeSuperiorXl {
     padding-top: @margeXl;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeM;
+    }
+
 }
 
 .margeInferiorXl {
     padding-bottom: @margeXl;
+
+    @media screen and (max-width: 1440px) {
+        padding-bottom: @margeM;
+    }
 }
 
 .margeSuperiorL {
     padding-top: @margeL;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeS ;
+    }
 }
 
 .margeInferiorL {
     padding-bottom: @margeL;
+
+    @media screen and (max-width: 1440px) {
+        padding-bottom: @margeS ;
+    }
 }
 
 .margeRelSuperiorXl {
     padding-top: @margeRelXl;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeRelL;
+    }
 }
 
 .margeRelInferiorXl {
     padding-bottom: @margeRelXl;
+
+    @media screen and (max-width: 1440px) {
+        padding-bottom: @margeRelL;
+    }
 }
 
 .margeRelSuperiorL {
     padding-top: @margeRelL;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeRelM;
+    }
 }
 
 .margeRelInferiorM {
     padding-bottom: @margeRelM;
+
+    @media screen and (max-width: 1440px) {
+        padding-bottom: @margeRelM;
+    }
 }
 
 .margeRelSuperiorM {
@@ -248,10 +317,18 @@ footer a {
 
 .margeSuperiorM {
     padding-top: @margeM;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeXs;
+    }
 }
 
 .margeSuperiorS {
     padding-top: @margeS;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeXxs;
+    }
 }
 
 .wrapper {
@@ -266,11 +343,11 @@ footer a {
 header {
     width: auto;
     box-sizing: border-box;
-    padding-top: @margeL;
     padding-bottom: 0;
+    .margeSuperiorL;
 
-    .material-icons {
-        font-size: 36px;
+    @media screen and (max-width: 1440px) {
+        .margeSuperiorS;
     }
 
     .logo svg {
@@ -292,6 +369,11 @@ main {
 footer {
     padding-top: @margeXl;
     padding-bottom: @margeL;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: @margeM;
+        padding-bottom: @margeS;
+    }
 
     ul {
         list-style: none;
@@ -316,14 +398,27 @@ footer {
     width: 100vw;
     display: none;
 
+    .flexContainer {
+        align-items: center;
+
+    }
+
+    @media screen and (max-width: 1440px) {
+        padding: @margeXs;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .logo svg {
         height: 2.25vh;
         width: auto;
+        min-height: 20px;
     }
 
     .material-icons {
         color: @colorFons;
         font-size: 36px;
+
 
         &:hover {
             color: @colorSecundari;
@@ -420,6 +515,10 @@ nav {
     align-content: center;
     border-bottom: solid 1px @colorPrimari;
 
+    @media screen and (max-width: 1024px) {
+        display: block;
+    }
+
     a {
         border: none;
 
@@ -450,6 +549,11 @@ nav {
     text-align: center;
     align-content: center;
 
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+
+
     img {
         width: 100%;
         height: auto;
@@ -462,6 +566,10 @@ nav {
     padding: @margeS;
     padding-left: @margeXl;
     padding-right: @margeXl;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 }
 
 .fotoFonsFull {
@@ -476,15 +584,33 @@ nav {
 .modul-1 {
     background-repeat: no-repeat;
     background-size: auto 60vh;
-    background-position: right 40vh;
+    background-position: right 50vh;
+
+    @media screen and (max-width: 1440px) {
+        background-size: auto 60vh;
+        background-position: right 40vh;
+    }
 }
 
 .modul-2 {
+    @media screen and (max-width: 1440px) {
+        .flexContainer {
+            display: block;
+        }
+    }
+
+
     .detalls {
         padding-left: @margeXl;
 
+        @media screen and (max-width: 1440px) {
+            padding-left: 0;
+            padding-top: @margeS;
+        }
+
         ul {
             list-style: none;
+            margin-left: -40px;
 
             li {
                 &:first-of-type {
@@ -498,6 +624,7 @@ nav {
 .modul-3 {
     h2 {
         margin-left: 40vw;
+
     }
 }
 
@@ -525,6 +652,11 @@ nav {
         width: 40vw;
         height: auto;
         object-fit: scale-down;
+
+        @media screen and (max-width: 1440px) {
+            width: 50vw;
+        }
+
     }
 }
 
@@ -556,6 +688,10 @@ input {
     font-size: 20px;
     font-weight: 300;
     border-radius: 0;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 16px;
+    }
 
     &:focus {
         outline: none;

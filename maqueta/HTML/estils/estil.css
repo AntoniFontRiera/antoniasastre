@@ -17,6 +17,11 @@ h1 {
   font-size: 8vh;
   line-height: 1;
 }
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 7vh;
+  }
+}
 h2 {
   font-weight: 500;
   font-size: 3vh;
@@ -30,6 +35,12 @@ li {
   font-weight: 300;
   font-size: 20px;
   line-height: 2;
+}
+@media screen and (max-width: 1440px) {
+  p,
+  li {
+    font-size: 16px;
+  }
 }
 ::-webkit-input-placeholder {
   color: black;
@@ -64,6 +75,13 @@ footer .material-icons {
   -o-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
 }
+@media screen and (max-width: 1440px) {
+  article .material-icons,
+  aside .material-icons,
+  footer .material-icons {
+    font-size: 40px;
+  }
+}
 article .material-icons:hover,
 aside .material-icons:hover,
 footer .material-icons:hover {
@@ -85,6 +103,13 @@ footer a {
   border-bottom: 2px solid black;
   color: black;
   cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  article a,
+  aside a,
+  footer a {
+    font-size: 16px;
+  }
 }
 article a:hover,
 aside a:hover,
@@ -139,6 +164,11 @@ footer a {
   color: black;
   border: none;
 }
+@media screen and (max-width: 1440px) {
+  .material-icons {
+    font-size: 40px;
+  }
+}
 .material-icons:hover {
   color: red;
   border: none;
@@ -164,13 +194,18 @@ footer a {
 }
 /*TAMANYS I MARGES*/
 .ample60 {
-  max-width: 60vw;
+  max-width: 60%;
 }
 .ample50 {
-  max-width: 50vw;
+  max-width: 50%;
+}
+@media screen and (max-width: 1440px) {
+  .ample50 {
+    max-width: 60%;
+  }
 }
 .ample40 {
-  max-width: 40vw;
+  max-width: 40%;
 }
 .fullHeihgt {
   height: 100vh;
@@ -179,29 +214,74 @@ footer a {
   width: 100%;
   height: auto;
 }
+.imgFull img {
+  object-fit: scale-down;
+  width: 100%;
+  height: auto;
+}
 .margeSuperiorXl {
   padding-top: 128px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorXl {
+    padding-top: 48px;
+  }
 }
 .margeInferiorXl {
   padding-bottom: 128px;
 }
+@media screen and (max-width: 1440px) {
+  .margeInferiorXl {
+    padding-bottom: 48px;
+  }
+}
 .margeSuperiorL {
   padding-top: 80px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorL {
+    padding-top: 32px;
+  }
 }
 .margeInferiorL {
   padding-bottom: 80px;
 }
+@media screen and (max-width: 1440px) {
+  .margeInferiorL {
+    padding-bottom: 32px;
+  }
+}
 .margeRelSuperiorXl {
   padding-top: 33vh;
+}
+@media screen and (max-width: 1440px) {
+  .margeRelSuperiorXl {
+    padding-top: 22vh;
+  }
 }
 .margeRelInferiorXl {
   padding-bottom: 33vh;
 }
+@media screen and (max-width: 1440px) {
+  .margeRelInferiorXl {
+    padding-bottom: 22vh;
+  }
+}
 .margeRelSuperiorL {
   padding-top: 22vh;
 }
+@media screen and (max-width: 1440px) {
+  .margeRelSuperiorL {
+    padding-top: 11vh;
+  }
+}
 .margeRelInferiorM {
   padding-bottom: 11vh;
+}
+@media screen and (max-width: 1440px) {
+  .margeRelInferiorM {
+    padding-bottom: 11vh;
+  }
 }
 .margeRelSuperiorM {
   padding-top: 11vh;
@@ -209,8 +289,18 @@ footer a {
 .margeSuperiorM {
   padding-top: 48px;
 }
+@media screen and (max-width: 1440px) {
+  .margeSuperiorM {
+    padding-top: 16px;
+  }
+}
 .margeSuperiorS {
   padding-top: 32px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorS {
+    padding-top: 8px;
+  }
 }
 .wrapper {
   max-width: 1600px;
@@ -222,11 +312,23 @@ footer a {
 header {
   width: auto;
   box-sizing: border-box;
-  padding-top: 80px;
   padding-bottom: 0;
+  padding-top: 80px;
 }
-header .material-icons {
-  font-size: 36px;
+@media screen and (max-width: 1440px) {
+  header {
+    padding-top: 32px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header {
+    padding-top: 32px;
+  }
+}
+@media screen and (max-width: 1440px) and screen and (max-width: 1440px) {
+  header {
+    padding-top: 8px;
+  }
 }
 header .logo svg {
   height: 8vh;
@@ -241,6 +343,12 @@ main {
 footer {
   padding-top: 128px;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 1440px) {
+  footer {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
 }
 footer ul {
   list-style: none;
@@ -262,9 +370,20 @@ footer ul li {
   width: 100vw;
   display: none;
 }
+#sticky .flexContainer {
+  align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  #sticky {
+    padding: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 #sticky .logo svg {
   height: 2.25vh;
   width: auto;
+  min-height: 20px;
 }
 #sticky .material-icons {
   color: white;
@@ -352,6 +471,11 @@ nav #creu .material-icons:hover {
   align-content: center;
   border-bottom: solid 1px black;
 }
+@media screen and (max-width: 1024px) {
+  .llistatProjecte {
+    display: block;
+  }
+}
 .llistatProjecte a {
   border: none;
 }
@@ -374,6 +498,11 @@ nav #creu .material-icons:hover {
   text-align: center;
   align-content: center;
 }
+@media screen and (max-width: 1024px) {
+  .llistatFoto {
+    width: 100%;
+  }
+}
 .llistatFoto img {
   width: 100%;
   height: auto;
@@ -385,6 +514,11 @@ nav #creu .material-icons:hover {
   padding-left: 128px;
   padding-right: 128px;
 }
+@media screen and (max-width: 1024px) {
+  .llistatText {
+    width: 100%;
+  }
+}
 .fotoFonsFull {
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,13 +529,31 @@ nav #creu .material-icons:hover {
 .modul-1 {
   background-repeat: no-repeat;
   background-size: auto 60vh;
-  background-position: right 40vh;
+  background-position: right 50vh;
+}
+@media screen and (max-width: 1440px) {
+  .modul-1 {
+    background-size: auto 60vh;
+    background-position: right 40vh;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .modul-2 .flexContainer {
+    display: block;
+  }
 }
 .modul-2 .detalls {
   padding-left: 128px;
 }
+@media screen and (max-width: 1440px) {
+  .modul-2 .detalls {
+    padding-left: 0;
+    padding-top: 32px;
+  }
+}
 .modul-2 .detalls ul {
   list-style: none;
+  margin-left: -40px;
 }
 .modul-2 .detalls ul li:first-of-type {
   font-weight: 700;
@@ -428,6 +580,12 @@ nav #creu .material-icons:hover {
   height: auto;
   object-fit: scale-down;
 }
+@media screen and (max-width: 1440px) {
+  .modul-6 picture,
+  .modul-6 img {
+    width: 50vw;
+  }
+}
 /*NOSOTROS*/
 .empleatTxt {
   padding-left: 40%;
@@ -453,6 +611,12 @@ input {
   font-size: 20px;
   font-weight: 300;
   border-radius: 0;
+}
+@media screen and (max-width: 1440px) {
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
 textarea:focus,
 input:focus {
