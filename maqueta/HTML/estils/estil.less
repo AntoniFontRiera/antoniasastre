@@ -39,12 +39,36 @@ h1 {
     font-weight: 200;
     font-size: 8vh;
     line-height: 1;
+
+    @media (max-width: 1440px) {
+        font-size: 7vh;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 5vh;
+    }
+
+    @media (max-width: 769px) {
+        font-size: 3vh;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 32px;
+    }
 }
 
 h2 {
     font-weight: 500;
     font-size: 3vh;
     line-height: 1.1;
+
+    @media (max-width: 1440px) {
+        font-size: 3vh;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+    }
 }
 
 h6 {
@@ -56,6 +80,10 @@ li {
     font-weight: 300;
     font-size: 20px;
     line-height: 2;
+
+    @media (max-width: 1440px) {
+        font-size: 16px;
+    }
 }
 
 article,
@@ -70,6 +98,10 @@ aside {
     .material-icons {
         font-size: 48px;
         .transicioRapida;
+
+        @media (max-width: 1440px) {
+            font-size: 32px;
+        }
 
         &:hover {
             -ms-transform: rotate(90deg);
@@ -103,6 +135,10 @@ aside {
     cursor: pointer;
     color: @colorPrimari;
 
+    @media (max-width: 1440px) {
+        font-size: 32px;
+    }
+
     &:hover {
         color: @colorSecundari;
     }
@@ -118,10 +154,18 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 769px) {
+        display: block;
+    }
 }
 
 .alinearVerticalFill {
     text-align: center;
+
+    @media (max-width: 769px) {
+        display: block;
+    }
 }
 
 .flexContainer {

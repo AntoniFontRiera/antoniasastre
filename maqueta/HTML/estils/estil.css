@@ -17,10 +17,40 @@ h1 {
   font-size: 8vh;
   line-height: 1;
 }
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 7vh;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5vh;
+  }
+}
+@media (max-width: 769px) {
+  h1 {
+    font-size: 3vh;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+}
 h2 {
   font-weight: 500;
   font-size: 3vh;
   line-height: 1.1;
+}
+@media (max-width: 1440px) {
+  h2 {
+    font-size: 3vh;
+  }
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 h6 {
   font-size: 14px;
@@ -30,6 +60,12 @@ li {
   font-weight: 300;
   font-size: 20px;
   line-height: 2;
+}
+@media (max-width: 1440px) {
+  p,
+  li {
+    font-size: 16px;
+  }
 }
 article h6,
 aside h6,
@@ -47,6 +83,12 @@ aside .material-icons {
   -ms-transition: all 125ms ease-in;
   -o-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
+}
+@media (max-width: 1440px) {
+  article .material-icons,
+  aside .material-icons {
+    font-size: 32px;
+  }
 }
 article .material-icons:hover,
 aside .material-icons:hover {
@@ -82,6 +124,11 @@ aside .material-icons:hover {
   cursor: pointer;
   color: black;
 }
+@media (max-width: 1440px) {
+  .material-icons {
+    font-size: 32px;
+  }
+}
 .material-icons:hover {
   color: red;
 }
@@ -94,8 +141,18 @@ aside .material-icons:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 769px) {
+  .alinearVerticalPare {
+    display: block;
+  }
+}
 .alinearVerticalFill {
   text-align: center;
+}
+@media (max-width: 769px) {
+  .alinearVerticalFill {
+    display: block;
+  }
 }
 .flexContainer {
   display: flex;
