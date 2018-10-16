@@ -194,18 +194,18 @@ footer a {
 }
 /*TAMANYS I MARGES*/
 .ample60 {
-  max-width: 60%;
+  max-width: 60vw;
 }
 .ample50 {
-  max-width: 50%;
+  max-width: 50vw;
 }
 @media screen and (max-width: 1440px) {
   .ample50 {
-    max-width: 60%;
+    max-width: 60vw;
   }
 }
 .ample40 {
-  max-width: 40%;
+  max-width: 40wv;
 }
 .fullHeihgt {
   height: 100vh;
