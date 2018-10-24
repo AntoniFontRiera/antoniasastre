@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="meta-description">
+    <meta name="keywords" content="keywords">
+    <meta name="robots" content="robots">
+    <meta http-equiv=”Content-Language” content=”ca”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -78,7 +82,7 @@
             </div>
         </div>
     </header>
-    <div class="modul-1 margeRelSuperiorL margeRelInferiorXl scrollreveal" style="background-image: url(img/img-modul-1.jpg)">
+    <div class="modul-1 margeRelSuperiorXl margeRelInferiorXl scrollreveal" style="background-image: url(img/img-modul-1.jpg)">
         <div class="wrapper">
             <h1 class="ample60">Arquitectura innovadora & diseño integrado</h1>
             <h2 class="ample60">Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism.</h2>
@@ -92,8 +96,8 @@
     </div>
     <div class="modul-2 scrollreveal">
         <div class="margeSuperiorL">
-            <div class="wrapper flexText">
-                <div class="descripcio ample40">
+            <div class="wrapper flexContainer">
+                <div class="ample50">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis nisl a odio lobortis tempor. Donec lacinia dolor odio, eu maximus libero pretium id. Ut euismod lacus ut euismod dignissim. Integer in commodo justo. Morbi nec dignissim sapien. Nulla venenatis nisl dapibus arcu commodo, eu lacinia sapien luctus. Donec faucibus dignissim odio, eget porttitor ex euismod vitae. Proin porttitor vestibulum maximus.</p>
                     <p>Vivamus sit amet sollicitudin purus. Phasellus viverra nunc eget posuere accumsan. Pellentesque non augue rutrum ipsum efficitur vestibulum. Etiam vitae sodales libero. Sed sodales lectus et arcu euismod, id egestas quam suscipit. Nunc turpis nisi, gravida at dignissim sed, varius id massa. Morbi volutpat ullamcorper dolor ut sodales. Sed maximus lorem eu accumsan fermentum. Sed aliquet tristique urna, at porta est pulvinar quis. Duis sed pulvinar nulla. In vitae sodales enim. Maecenas et auctor nunc, vitae ornare quam.</p>
                 </div>
@@ -116,28 +120,49 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/fotoslider-1.jpg" alt="descripcio">
+                    <picture>
+                        <source srcset="img/fotoslider-1.jpg" media="(max-width: 420px)">
+                        <source srcset="img/fotoslider-1.jpg" media="(max-width: 1024px)">
+                        <source srcset="img/fotoslider-1.jpg">
+                        <img srcset="img/fotoslider-1.jpg" alt="Descripcio">
+                    </picture>
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/fotoslider-2.jpg" alt="descripcio">
+                    <picture>
+                        <source srcset="img/fotoslider-2.jpg" media="(max-width: 420px)">
+                        <source srcset="img/fotoslider-2.jpg" media="(max-width: 1024px)">
+                        <source srcset="img/fotoslider-2.jpg">
+                        <img srcset="img/fotoslider-2.jpg" alt="Descripcio">
+                    </picture>
                 </div>
             </div>
         </div>
     </div>
     <div class="modul-6 margeSuperiorL margeInferiorL scrollreveal">
-        <div class="wrapper">
-
+        <div class="wrapper flexContainer flexText">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis nisl a odio lobortis tempor. Donec lacinia dolor odio, eu maximus libero pretium id. Ut euismod lacus ut euismod dignissim. Integer in commodo justo. Morbi nec dignissim sapien. Nulla venenatis nisl dapibus arcu commodo, eu lacinia sapien luctus.</p>
+            </div>
+            <picture>
+                <source srcset="img/img-modul-7.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-modul-7.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-modul-7.jpg">
+                <img srcset="img/img-modul-7.jpg" alt="Descripcio">
+            </picture>
         </div>
     </div>
     <div class="modul-4 margeSuperiorL scrollreveal">
-        <img src="img/img-full.jpg" alt="descripcio" class="imgFull scrollreveal">
+        <picture>
+            <source srcset="img/img-full.jpg" media="(max-width: 420px)">
+            <source srcset="img/img-full.jpg" media="(max-width: 1024px)">
+            <source srcset="img/img-full.jpg">
+            <img srcset="img/img-full.jpg" alt="Descripcio" class="imgFull scrollreveal">
+        </picture>
     </div>
-
-
     <footer class="scrollreveal">
         <ul>
-            <li>Instagram — LinkedIn</li>
-            <li>© Antònia Sastre + Partners — Aviso legal</li>
+            <li><a href="#">Instagram</a> <a href="#">LinkedIn</a></li>
+            <li>© Antònia Sastre + Partners — <a href="avisolegal.html">Aviso legal</a></li>
         </ul>
     </footer>
     <div id="sticky">
@@ -205,12 +230,9 @@
             </div>
         </div>
     </nav>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.4/scrollreveal.min.js"></script>
-
     <script>
         $(document).ready(function() {
             ScrollReveal().reveal('.scrollreveal', {
@@ -246,8 +268,8 @@
                 $("#sticky").fadeOut();
             }
         });
-    </script>
 
+    </script>
 </body>
 
 </html>

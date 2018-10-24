@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="meta-description">
+    <meta name="keywords" content="keywords">
+    <meta name="robots" content="robots">
+    <meta http-equiv=”Content-Language” content=”ca”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -80,13 +84,18 @@
     </header>
     <main class="bordeInferior">
         <article class="wrapper">
-            <div class="ample60 margeRelSuperiorXl scrollreveal">
+            <div class="ample60 margeRelSuperiorXl">
                 <h1>Arquitectura innovadora & diseño integrado</h1>
             </div>
         </article>
-        <img src="img/img-full.jpg" alt="descripcio" class="imgFull scrollreveal">
+        <picture class="imgFull">
+            <source srcset="img/img-full.jpg" media="(max-width: 420px)">
+            <source srcset="img/img-full.jpg" media="(max-width: 1024px)">
+            <source srcset="img/img-full.jpg">
+            <img srcset="img/img-full.jpg" alt="Descripcio">
+        </picture>
         <article class="wrapper scrollreveal">
-            <div class="ample60 margeSuperiorXl margeInferiorXl">
+            <div class="about ample60 margeSuperiorXl margeInferiorXl">
                 <h6>Sobre Nosotros</h6>
                 <h2>Antonia Sastre + Partners is an international practice operating within the traditional boundaries of architecture and urbanism.</h2>
                 <p>Partimos de la base de que la mejor arquitectura procede de una síntesis de todos los elementos que separados forman y documentan el carácter de un edificio; la estructura que lo sostiene; las instalaciones que permiten que funcione; su valor natural; la calidad de la iluminación natural; el simbolismo de la forma; la relación del edificio con la línea de horizonte o el paisaje urbano; el modo en que uno circula por él; y por último, su capacidad de levantar el ánimo. Arquitectos e ingenieros, al trabajar en equipo de manera creativa desde la concepción del proyecto, combinan su experiencia para idear soluciones integradas e sostenibles.</p>
@@ -96,7 +105,12 @@
     </main>
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="img/img-llistat-projectes.jpg" alt="descripcio">
+            <picture>
+                <source srcset="img/img-llistat-projectes-small.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-llistat-projectes-med.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-llistat-projectes.jpg">
+                <img srcset="img/img-llistat-projectes.jpg" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -108,7 +122,12 @@
     </aside>
     <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
-            <img src="img/img-llistat-projectes.jpg" alt="descripcio">
+            <picture>
+                <source srcset="img/img-llistat-projectes-small.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-llistat-projectes-med.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-llistat-projectes.jpg">
+                <img srcset="img/img-llistat-projectes.jpg" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -120,7 +139,12 @@
     </aside>
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="img/img-llistat-projectes.jpg" alt="descripcio">
+            <picture>
+                <source srcset="img/img-llistat-projectes-small.jpg" media="(max-width: 420px)">
+                <source srcset="img/img-llistat-projectes-med.jpg" media="(max-width: 1024px)">
+                <source srcset="img/img-llistat-projectes.jpg">
+                <img srcset="img/img-llistat-projectes.jpg" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -130,16 +154,10 @@
             </div>
         </div>
     </aside>
-
-
-
-
-
-
     <footer class="scrollreveal">
         <ul>
-            <li>Instagram — LinkedIn</li>
-            <li>© Antònia Sastre + Partners — Aviso legal</li>
+            <li><a href="#">Instagram</a> <a href="#">LinkedIn</a></li>
+            <li>© Antònia Sastre + Partners — <a href="avisolegal.html">Aviso legal</a></li>
         </ul>
     </footer>
     <div id="sticky">
@@ -211,7 +229,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.4/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 
     <script>
         $(document).ready(function() {

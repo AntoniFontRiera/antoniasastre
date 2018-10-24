@@ -42,16 +42,6 @@
 <nav>
     <div class="alinearVerticalPare">
         <div class="alinearVerticalFill">
-            <!-- {{ form_open() }}
-                <ul name="locale" data-request="onSwitchLocale" class="idiomes">
-                    {% for code, name in locales %}
-                    <li value="{{ code }}" {{ code == activeLocale ? 'selected' }}><a href="#">{{ name }}</a></li>
-                    {% endfor %}
-                    <li><a href="#">Esp</a></li>
-                    <li><a href="#">Cat</a></li>
-                    <li><a href="#">Esp</a></li>
-                </ul>
-            {{ form_close() }} -->
             {% component 'localePicker' %}
             <ul class="navegacio">
                 <li><a href="{{'index' |page}}">Home</a></li>

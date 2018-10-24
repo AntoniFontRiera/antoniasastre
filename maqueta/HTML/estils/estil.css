@@ -17,11 +17,16 @@ h1 {
   font-size: 8vh;
   line-height: 1;
 }
+<<<<<<< HEAD
 @media (max-width: 1440px) {
+=======
+@media screen and (max-width: 1440px) {
+>>>>>>> feature/integracio
   h1 {
     font-size: 7vh;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 1024px) {
   h1 {
     font-size: 5vh;
@@ -37,6 +42,8 @@ h1 {
     font-size: 32px;
   }
 }
+=======
+>>>>>>> feature/integracio
 h2 {
   font-weight: 500;
   font-size: 3vh;
@@ -61,22 +68,45 @@ li {
   font-size: 20px;
   line-height: 2;
 }
+<<<<<<< HEAD
 @media (max-width: 1440px) {
+=======
+@media screen and (max-width: 1440px) {
+>>>>>>> feature/integracio
   p,
   li {
     font-size: 16px;
   }
 }
+<<<<<<< HEAD
+=======
+::-webkit-input-placeholder {
+  color: black;
+}
+::-moz-placeholder {
+  color: black;
+}
+:-ms-input-placeholder {
+  color: black;
+}
+:-moz-placeholder {
+  color: black;
+}
+>>>>>>> feature/integracio
 article h6,
 aside h6,
+footer h6,
 article h2,
 aside h2,
+footer h2,
 article p,
-aside p {
+aside p,
+footer p {
   margin-bottom: 48px;
 }
 article .material-icons,
-aside .material-icons {
+aside .material-icons,
+footer .material-icons {
   font-size: 48px;
   -webkit-transition: all 125ms ease-in;
   -moz-transition: all 125ms ease-in;
@@ -84,17 +114,72 @@ aside .material-icons {
   -o-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
 }
+<<<<<<< HEAD
 @media (max-width: 1440px) {
   article .material-icons,
   aside .material-icons {
     font-size: 32px;
+=======
+@media screen and (max-width: 1440px) {
+  article .material-icons,
+  aside .material-icons,
+  footer .material-icons {
+    font-size: 40px;
+>>>>>>> feature/integracio
   }
 }
 article .material-icons:hover,
-aside .material-icons:hover {
+aside .material-icons:hover,
+footer .material-icons:hover {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+article a,
+aside a,
+footer a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 125ms ease-in;
+  -moz-transition: all 125ms ease-in;
+  -ms-transition: all 125ms ease-in;
+  -o-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  border-bottom: 2px solid black;
+  color: black;
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  article a,
+  aside a,
+  footer a {
+    font-size: 16px;
+  }
+}
+article a:hover,
+aside a:hover,
+footer a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid red;
+}
+article ul,
+aside ul,
+footer ul {
+  list-style: none;
+}
+article ul li,
+aside ul li,
+footer ul li {
+  margin-left: -40px;
+}
+article ul li:first-of-type,
+aside ul li:first-of-type,
+footer ul li:first-of-type {
+  font-weight: 700;
+}
+footer a {
+  font-weight: 300;
 }
 .textBlanc {
   color: white;
@@ -123,6 +208,12 @@ aside .material-icons:hover {
   transition: all 125ms ease-in;
   cursor: pointer;
   color: black;
+  border: none;
+}
+@media screen and (max-width: 1440px) {
+  .material-icons {
+    font-size: 40px;
+  }
 }
 @media (max-width: 1440px) {
   .material-icons {
@@ -131,6 +222,7 @@ aside .material-icons:hover {
 }
 .material-icons:hover {
   color: red;
+  border: none;
 }
 /*ALINEACIONS*/
 .centrarHoritzontal {
@@ -159,14 +251,22 @@ aside .material-icons:hover {
   justify-content: space-between;
 }
 .flexText {
-  display: flex;
+  align-items: center;
 }
 /*TAMANYS I MARGES*/
 .ample60 {
-  max-width: 60vw;
+  max-width: 60%;
+}
+.ample50 {
+  max-width: 50%;
+}
+@media screen and (max-width: 1440px) {
+  .ample50 {
+    max-width: 60%;
+  }
 }
 .ample40 {
-  max-width: 40vw;
+  max-width: 40%;
 }
 .fullHeihgt {
   height: 100vh;
@@ -175,32 +275,93 @@ aside .material-icons:hover {
   width: 100%;
   height: auto;
 }
+.imgFull img {
+  object-fit: scale-down;
+  width: 100%;
+  height: auto;
+}
 .margeSuperiorXl {
   padding-top: 128px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorXl {
+    padding-top: 48px;
+  }
 }
 .margeInferiorXl {
   padding-bottom: 128px;
 }
+@media screen and (max-width: 1440px) {
+  .margeInferiorXl {
+    padding-bottom: 48px;
+  }
+}
 .margeSuperiorL {
   padding-top: 80px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorL {
+    padding-top: 32px;
+  }
 }
 .margeInferiorL {
   padding-bottom: 80px;
 }
+@media screen and (max-width: 1440px) {
+  .margeInferiorL {
+    padding-bottom: 32px;
+  }
+}
 .margeRelSuperiorXl {
   padding-top: 33vh;
+}
+@media screen and (max-width: 1440px) {
+  .margeRelSuperiorXl {
+    padding-top: 22vh;
+  }
 }
 .margeRelInferiorXl {
   padding-bottom: 33vh;
 }
+@media screen and (max-width: 1440px) {
+  .margeRelInferiorXl {
+    padding-bottom: 22vh;
+  }
+}
 .margeRelSuperiorL {
   padding-top: 22vh;
+}
+@media screen and (max-width: 1440px) {
+  .margeRelSuperiorL {
+    padding-top: 11vh;
+  }
 }
 .margeRelInferiorM {
   padding-bottom: 11vh;
 }
+@media screen and (max-width: 1440px) {
+  .margeRelInferiorM {
+    padding-bottom: 11vh;
+  }
+}
 .margeRelSuperiorM {
   padding-top: 11vh;
+}
+.margeSuperiorM {
+  padding-top: 48px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorM {
+    padding-top: 16px;
+  }
+}
+.margeSuperiorS {
+  padding-top: 32px;
+}
+@media screen and (max-width: 1440px) {
+  .margeSuperiorS {
+    padding-top: 8px;
+  }
 }
 .wrapper {
   max-width: 1600px;
@@ -212,11 +373,23 @@ aside .material-icons:hover {
 header {
   width: auto;
   box-sizing: border-box;
-  padding-top: 80px;
   padding-bottom: 0;
+  padding-top: 80px;
 }
-header .material-icons {
-  font-size: 36px;
+@media screen and (max-width: 1440px) {
+  header {
+    padding-top: 32px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header {
+    padding-top: 32px;
+  }
+}
+@media screen and (max-width: 1440px) and screen and (max-width: 1440px) {
+  header {
+    padding-top: 8px;
+  }
 }
 header .logo svg {
   height: 8vh;
@@ -231,6 +404,12 @@ main {
 footer {
   padding-top: 128px;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 1440px) {
+  footer {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
 }
 footer ul {
   list-style: none;
@@ -252,9 +431,20 @@ footer ul li {
   width: 100vw;
   display: none;
 }
+#sticky .flexContainer {
+  align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  #sticky {
+    padding: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 #sticky .logo svg {
-  height: 2.5vh;
+  height: 2.25vh;
   width: auto;
+  min-height: 20px;
 }
 #sticky .material-icons {
   color: white;
@@ -342,6 +532,23 @@ nav #creu .material-icons:hover {
   align-content: center;
   border-bottom: solid 1px black;
 }
+@media screen and (max-width: 1024px) {
+  .llistatProjecte {
+    display: block;
+  }
+}
+.llistatProjecte a {
+  border: none;
+}
+.llistatProjecte a:hover {
+  border: none;
+}
+.about a {
+  border: none;
+}
+.about a:hover {
+  border: none;
+}
 .invertit {
   flex-direction: row-reverse;
 }
@@ -351,6 +558,11 @@ nav #creu .material-icons:hover {
   padding: 32px;
   text-align: center;
   align-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .llistatFoto {
+    width: 100%;
+  }
 }
 .llistatFoto img {
   width: 100%;
@@ -363,6 +575,11 @@ nav #creu .material-icons:hover {
   padding-left: 128px;
   padding-right: 128px;
 }
+@media screen and (max-width: 1024px) {
+  .llistatText {
+    width: 100%;
+  }
+}
 .fotoFonsFull {
   background-repeat: no-repeat;
   background-size: cover;
@@ -373,19 +590,126 @@ nav #creu .material-icons:hover {
 .modul-1 {
   background-repeat: no-repeat;
   background-size: auto 60vh;
-  background-position: right 40vh;
+  background-position: right 50vh;
+}
+@media screen and (max-width: 1440px) {
+  .modul-1 {
+    background-size: auto 60vh;
+    background-position: right 40vh;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .modul-2 .flexContainer {
+    display: block;
+  }
 }
 .modul-2 .detalls {
   padding-left: 128px;
 }
+@media screen and (max-width: 1440px) {
+  .modul-2 .detalls {
+    padding-left: 0;
+    padding-top: 32px;
+  }
+}
 .modul-2 .detalls ul {
   list-style: none;
+  margin-left: -40px;
+}
+.modul-2 .detalls ul li:first-of-type {
+  font-weight: 700;
 }
 .modul-3 h2 {
   margin-left: 40vw;
 }
+.modul-5 .swiper-wrapper,
+.modul-5 swiper-slide {
+  max-height: 75vh;
+}
 .modul-5 .swiper-wrapper img,
 .modul-5 swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+.modul-6 .txt {
+  box-sizing: border-box;
+  padding-right: 128px;
+}
+.modul-6 picture,
+.modul-6 img {
+  width: 40vw;
+  height: auto;
+  object-fit: scale-down;
+}
+@media screen and (max-width: 1440px) {
+  .modul-6 picture,
+  .modul-6 img {
+    width: 50vw;
+  }
+}
+/*NOSOTROS*/
+.empleatTxt {
+  padding-left: 40%;
+}
+.imgEmpleat {
+  margin-left: 40%;
+  width: 60%;
+  height: auto;
+}
+.imgJefa {
   width: 100%;
   height: auto;
+}
+/* CONTACTO*/
+textarea,
+input {
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 0;
+}
+@media screen and (max-width: 1440px) {
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.textPetit {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.textPetit a {
+  font-size: 14px;
+  font-weight: 400;
+}
+textarea {
+  height: 10vh;
+  min-height: 100px;
+  max-height: 350px;
+}
+.boto {
+  border: black 1px solid;
+  padding: 16px;
+  min-width: 192px;
+  cursor: pointer;
+  -webkit-transition: all 125ms ease-in;
+  -moz-transition: all 125ms ease-in;
+  -ms-transition: all 125ms ease-in;
+  -o-transition: all 125ms ease-in;
+  transition: all 125ms ease-in;
+  margin-left: 250px;
+}
+.boto:hover {
+  background: red;
+  border: 1px solid red;
+  color: white;
 }

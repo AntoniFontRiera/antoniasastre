@@ -30,11 +30,17 @@ class Project extends Model
      */
     public $table = 'bmut_antsastre_projects';
 
+    protected $jsonable = ['module'];
+
     public $attachOne = [
-        'principal_image' => 'System\Models\File'
+        'principal_image' => 'System\Models\File',
+        'img_C' => 'System\Models\File',
+        'img_E' => 'System\Models\File'
     ];
 
+
     public $attachMany = [
-        'gallery' => 'System\Models\File'
+        'gallery' => 'System\Models\File',
+        'img_slider_B' => 'System\Models\File'
     ];
 }

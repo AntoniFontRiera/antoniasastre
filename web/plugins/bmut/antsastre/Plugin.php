@@ -6,6 +6,9 @@ class Plugin extends PluginBase
 {
     public function registerComponents()
     {
+        return[
+            'Bmut\Antsastre\Components\Form' => 'form'
+        ];
     }
 
     public function registerSettings()

@@ -58,8 +58,25 @@ li {
     line-height: 2;
 }
 
+::-webkit-input-placeholder {
+    color: @colorPrimari;
+}
+
+::-moz-placeholder {
+    color: @colorPrimari;
+}
+
+:-ms-input-placeholder {
+    color: @colorPrimari;
+}
+
+:-moz-placeholder {
+    color: @colorPrimari;
+}
+
 article,
-aside {
+aside,
+footer {
 
     h6,
     h2,
@@ -77,6 +94,39 @@ aside {
             transform: rotate(90deg);
         }
     }
+
+    a {
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        .transicioRapida;
+        border-bottom: 2px solid @colorPrimari;
+        color: @colorPrimari;
+        cursor: pointer;
+
+        &:hover {
+            padding-bottom: 2px;
+            border-bottom: 2px solid @colorSecundari;
+        }
+
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-left: -40px;
+
+            &:first-of-type {
+                font-weight: 700;
+            }
+        }
+    }
+
+}
+
+footer a {
+    font-weight: 300;
 }
 
 .textBlanc {
@@ -102,9 +152,11 @@ aside {
     .transicioRapida;
     cursor: pointer;
     color: @colorPrimari;
+    border: none;
 
     &:hover {
         color: @colorSecundari;
+        border: none;
     }
 }
 
@@ -130,7 +182,7 @@ aside {
 }
 
 .flexText {
-    display: flex;
+    align-items: center;
 }
 
 
@@ -139,6 +191,10 @@ aside {
 /*TAMANYS I MARGES*/
 .ample60 {
     max-width: 60vw;
+}
+
+.ample50 {
+    max-width: 50vw;
 }
 
 .ample40 {
@@ -190,6 +246,13 @@ aside {
     padding-top: @margeRelM;
 }
 
+.margeSuperiorM {
+    padding-top: @margeM;
+}
+
+.margeSuperiorS {
+    padding-top: @margeS;
+}
 
 .wrapper {
     max-width: 1600px;
@@ -254,7 +317,7 @@ footer {
     display: none;
 
     .logo svg {
-        height: 2.5vh;
+        height: 2.25vh;
         width: auto;
     }
 
@@ -356,6 +419,24 @@ nav {
     justify-content: flex-start;
     align-content: center;
     border-bottom: solid 1px @colorPrimari;
+
+    a {
+        border: none;
+
+        &:hover {
+            border: none;
+        }
+    }
+}
+
+.about {
+    a {
+        border: none;
+
+        &:hover {
+            border: none;
+        }
+    }
 }
 
 .invertit {
@@ -404,6 +485,12 @@ nav {
 
         ul {
             list-style: none;
+
+            li {
+                &:first-of-type {
+                    font-weight: 700;
+                }
+            }
         }
     }
 }
@@ -418,9 +505,90 @@ nav {
 
     .swiper-wrapper,
     swiper-slide {
+        max-height: 75vh;
+
         img {
-            width: 100%;
             height: auto;
+            width: 100%
         }
+    }
+}
+
+.modul-6 {
+    .txt {
+        box-sizing: border-box;
+        padding-right: @margeXl;
+    }
+
+    picture,
+    img {
+        width: 40vw;
+        height: auto;
+        object-fit: scale-down;
+    }
+}
+
+/*NOSOTROS*/
+.empleatTxt {
+    padding-left: 40%;
+}
+
+.imgEmpleat {
+    margin-left: 40%;
+    width: 60%;
+    height: auto;
+}
+
+.imgJefa {
+    width: 100%;
+    height: auto;
+}
+
+/* CONTACTO*/
+textarea,
+input {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: @margeS;
+    padding-bottom: @margeXs;
+    border: none;
+    border-bottom: 1px solid @colorPrimari;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.textPetit {
+    font-size: 14px;
+    line-height: 1.2;
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+textarea {
+    height: 10vh;
+    min-height: 100px;
+    max-height: 350px;
+}
+
+.boto {
+    border: @colorPrimari 1px solid;
+    padding: @margeXs;
+    min-width: @margeXl*1.5;
+    cursor: pointer;
+    .transicioRapida;
+    margin-left: 250px;
+
+    &:hover {
+        background: @colorSecundari;
+        border: 1px solid @colorSecundari;
+        color: @colorFons;
     }
 }
