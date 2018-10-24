@@ -2,6 +2,11 @@ title = "Projects"
 url = "/projects/:slug"
 layout = "default"
 is_hslugden = 0
+
+[viewBag]
+localeUrl[En] = "/projects/:slug"
+localeUrl[Cat] = "/projects/:slug"
+
 ==
 
 <?php
@@ -11,7 +16,6 @@ use bmut\antsastre\Models\Project;
 function onStart(){
     $slug = $this->param('slug');
     $this['project'] = Project::where('slug',$slug)->first();
-
 }
 ?>
 ==

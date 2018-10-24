@@ -11,7 +11,7 @@ class Project extends Model
 
     public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
 
-    public $translatable = ['title','description'];
+    public $translatable = ['title','description','descripcion_A','descripcion_A_2','desc_C','desc_D'];
 
     /*
      * Disable timestamps by default.
