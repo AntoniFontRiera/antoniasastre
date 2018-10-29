@@ -33,3 +33,97 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+    module:
+        label: Modulos
+        prompt: 'Añadir Nuevo Modulo'
+        span: full
+        type: repeater
+        form:
+            fields:
+                modulos:
+                    label: 'Selecciona Modulo'
+                    options:
+                        A: 'Modulo A'
+                        B: 'Modulo B'
+                        C: 'Modulo C'
+                        D: 'Modulo D'
+                        E: 'Modulo E'
+                    emptyOption: Empty
+                    span: full
+                    default: empty
+                    type: dropdown
+                descripcion_A:
+                    label: Descripcion
+                    size: huge
+                    span: left
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[A]'
+                    type: textarea
+                descripcion_A_2:
+                    label: 'Datos Tecnicos'
+                    size: huge
+                    span: right
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[A]'
+                    type: richeditor
+                img_slider_B:
+                    label: Slider
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: full
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[B]'
+                    type: fileupload
+                desc_C:
+                    label: 'Descripcion Modulo C'
+                    size: huge
+                    span: left
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[C]'
+                    type: textarea
+                img_C:
+                    label: 'Imagen Modulo C'
+                    mode: file
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: right
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[C]'
+                    type: fileupload
+                desc_D:
+                    label: 'Texto modulo D'
+                    size: large
+                    span: full
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[D]'
+                    type: textarea
+                img_E:
+                    label: 'Imagen Modulo E'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: full
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[E]'
+                    type: fileupload

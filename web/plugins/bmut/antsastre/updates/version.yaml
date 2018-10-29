@@ -9,3 +9,9 @@
 1.0.4:
     - 'Created table bmut_antsastre_persons'
     - builder_table_create_bmut_antsastre_persons.php
+1.0.5:
+    - 'Created table bmut_antsastre_'
+    - builder_table_create_bmut_antsastre.php
+1.0.6:
+    - 'Updated table bmut_antsastre_projects'
+    - builder_table_update_bmut_antsastre_projects_2.php
