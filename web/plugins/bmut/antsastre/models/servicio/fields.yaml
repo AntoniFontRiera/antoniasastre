@@ -1,17 +1,10 @@
 fields:
     title:
-        label: Servicio
-        prompt: 'Añadir Nuevo Servicio'
+        label: 'Titulo del Servicio'
         span: full
-        type: repeater
-        form:
-            fields:
-                title:
-                    label: 'Titulo del Servicio'
-                    span: full
-                    type: text
-                description:
-                    label: 'Descripción del Servicio'
-                    size: huge
-                    span: full
-                    type: richeditor
+        type: text
+    description:
+        label: 'Descripción del Servicio'
+        size: huge
+        span: full
+        type: richeditor

@@ -11,8 +11,8 @@ class BuilderTableCreateBmutAntsastre extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->json('title')->nullable();
-            $table->json('description')->nullable();
+            $table->text('title')->nullable();            
+            $table->text('description')->nullable();            
         });
     }
     

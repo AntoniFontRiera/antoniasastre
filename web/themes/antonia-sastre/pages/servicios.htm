@@ -6,72 +6,34 @@ is_hidden = 0
 [viewBag]
 localeUrl[En] = "/servicios"
 localeUrl[Cat] = "/servicios"
+
 ==
 
+<?php
+
+use bmut\antsastre\Models\Servicio;
+
+function onStart(){
+
+$this['services'] = Servicio::get();
+}
+?>
+==
 <article class="margeRelSuperiorL margeInferiorL bordeInferior scrollreveal">
-        <div class="wrapper">
-            <div class="ample60">
-                <h1>Where Can You Find Unique Myspace Layouts Nowadays</h1>
-            </div>
+    <div class="wrapper">
+        <div class="ample60">
+            <h1>{{'Servicios'|_}}</h1>
         </div>
-    </article>
-    <article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
-        <div class="wrapper">
-            <div class="ample60">
-                <ul>
-                    <li>Urbanismo</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Duis convallis nisl a odio lobortis tempor</li>
-                    <li>Donec lacinia dolor odio, eu maximus libero pretium id</li>
-                    <li>Ut euismod lacus ut euismod dignissim. Integer in commodo justo</li>
-                    <li>Morbi nec dignissim sapien</li>
-                    <li>Nulla venenatis nisl dapibus arcu commodo, eu lacinia sapien luctus</li>
-                </ul>
-            </div>
+    </div>
+</article>
+{% for service in services %}
+<article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
+    <div class="wrapper">
+        <div class="ample60">
+            <ul>
+                {{service.description|raw}}
+            </ul>
         </div>
-    </article>
-    <article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
-        <div class="wrapper">
-            <div class="ample60">
-                <ul>
-                    <li>Urbanismo</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Duis convallis nisl a odio lobortis tempor</li>
-                    <li>Donec lacinia dolor odio, eu maximus libero pretium id</li>
-                    <li>Ut euismod lacus ut euismod dignissim. Integer in commodo justo</li>
-                    <li>Morbi nec dignissim sapien</li>
-                    <li>Nulla venenatis nisl dapibus arcu commodo, eu lacinia sapien luctus</li>
-                </ul>
-            </div>
-        </div>
-    </article>
-    <article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
-        <div class="wrapper">
-            <div class="ample60">
-                <ul>
-                    <li>Urbanismo</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Duis convallis nisl a odio lobortis tempor</li>
-                    <li>Donec lacinia dolor odio, eu maximus libero pretium id</li>
-                    <li>Ut euismod lacus ut euismod dignissim. Integer in commodo justo</li>
-                    <li>Morbi nec dignissim sapien</li>
-                    <li>Nulla venenatis nisl dapibus arcu commodo, eu lacinia sapien luctus</li>
-                </ul>
-            </div>
-        </div>
-    </article>
-    <article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
-        <div class="wrapper">
-            <div class="ample60">
-                <ul>
-                    <li>Urbanismo</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Duis convallis nisl a odio lobortis tempor</li>
-                    <li>Donec lacinia dolor odio, eu maximus libero pretium id</li>
-                    <li>Ut euismod lacus ut euismod dignissim. Integer in commodo justo</li>
-                    <li>Morbi nec dignissim sapien</li>
-                    <li>Nulla venenatis nisl dapibus arcu commodo, eu lacinia sapien luctus</li>
-                </ul>
-            </div>
-        </div>
-    </article>
+    </div>
+</article>
+{% endfor %}
