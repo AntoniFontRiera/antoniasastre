@@ -18,7 +18,12 @@ $this['projects'] = Project::get();
                 <h1>{{'Titulo Home'|_}}</h1>
             </div>
         </article>
-        <img src="{{'assets/img/img-full.jpg'|theme}}" alt="descripcio" class="imgFull scrollreveal">
+        <picture class="imgFull">
+          <source srcset="{{'assets/img/img-full.jpg'|theme}}" media="(max-width: 420px)">
+          <source srcset="{{'assets/img/img-full.jpg'|theme}}" media="(max-width: 1024px)">
+          <source srcset="{{'assets/img/img-full.jpg'|theme}}">
+          <img srcset="{{'assets/img/img-full.jpg'|theme}}" alt="Descripcio">
+      </picture>
         <article class="wrapper scrollreveal">
             <div class="about ample60 margeSuperiorXl margeInferiorXl">
                 <h6>{{'Sobre Nosotros'|_}}</h6>
@@ -32,7 +37,12 @@ $this['projects'] = Project::get();
     {% if project.id % 2 == 0 %}
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="{{project.principal_image.getPath()}}" alt="descripcio">
+            <picture>
+              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 420px)">
+              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 1024px)">
+              <source srcset="{{project.principal_image.getPath()}}">
+              <img srcset="{{project.principal_image.getPath()}}" alt="Descripcio">
+          </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -45,7 +55,12 @@ $this['projects'] = Project::get();
     {% else %}
     <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
-            <img src="{{project.principal_image.getPath()}}" alt="descripcio">
+            <picture>
+                <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 420px)">
+                <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 1024px)">
+                <source srcset="{{project.principal_image.getPath()}}">
+                <img srcset="{{project.principal_image.getPath()}}" alt="Descripcio">
+            </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">

@@ -17,7 +17,7 @@ $this['persons'] = Person::get();
 }
 ?>
 ==
-<article class="margeRelSuperiorL margeInferiorL bordeInferior scrollreveal">
+<article class="margeRelSuperiorXl margeInferiorL bordeInferior scrollreveal">
         <div class="wrapper">
             <div class="ample60">
                 <h1>{{'nosotros'|_}}</h1>
@@ -26,7 +26,7 @@ $this['persons'] = Person::get();
         </div>
     </article>
 {% for person in persons %}
-<article class="margeSuperiorXl margeInferiorL bordeInferior scrollreveal">
+<article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
     <div class="wrapper">
         <picture>
             <source srcset="{{person.employe_photo.getPath()}}" media="(max-width: 420px)">

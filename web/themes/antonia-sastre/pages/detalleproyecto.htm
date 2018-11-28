@@ -37,8 +37,8 @@ function onStart(){
 
     <div class="modul-2 scrollreveal">
         <div class="margeSuperiorL">
-            <div class="wrapper flexText">
-                <div class="descripcio ample40">
+            <div class="wrapper flexContainer">
+                <div class="ample50">
                     <p>{{modules.descripcion_A}}</p>
                 </div>
                 <div class="detalls">
@@ -55,7 +55,12 @@ function onStart(){
             <div class="swiper-wrapper">
                 {% for img_B in  project.img_slider_B %}
                 <div class="swiper-slide">
-                    <img src="{{img_B.getPath()}}" alt="descripcio">
+                    <picture>
+                        <source srcset="{{img_B.getPath()}}" media="(max-width: 420px)">
+                        <source srcset="{{img_B.getPath()}}" media="(max-width: 1024px)">
+                        <source srcset="{{img_B.getPath()}}">
+                        <img srcset="{{img_B.getPath()}}" alt="Descripcio">
+                    </picture>
                 </div>
                 {% endfor %}
             </div>
@@ -79,8 +84,6 @@ function onStart(){
 </div>
 
     {% elseif modules.modulos == 'D' %}
-
-
         <div class="modul-6 margeSuperiorL margeInferiorL scrollreveal">
             <div class="wrapper">
               {{modules.desc_D}}

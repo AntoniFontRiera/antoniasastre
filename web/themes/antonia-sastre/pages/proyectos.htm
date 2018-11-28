@@ -38,7 +38,12 @@ $this['projects'] = Project::get();
     {% if project.id % 2 == 0 %}
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
-            <img src="{{project.principal_image.getPath()}}" alt="descripcio">
+            <picture>
+              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 420px)">
+              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 1024px)">
+              <source srcset="{{project.principal_image.getPath()}}">
+              <img srcset="{{project.principal_image.getPath()}}" alt="Descripcio">
+          </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
@@ -51,7 +56,12 @@ $this['projects'] = Project::get();
     {% else %}
     <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
-            <img src="{{project.principal_image.getPath()}}" alt="descripcio">
+            <picture>
+              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 420px)">
+              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 1024px)">
+              <source srcset="{{project.principal_image.getPath()}}">
+              <img srcset="{{project.principal_image.getPath()}}" alt="Descripcio">
+          </picture>
         </div>
         <div class="llistatText alinearVerticalPare">
             <div class="alinearVerticalFill">
