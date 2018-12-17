@@ -17,3 +17,7 @@ navigation:
         label: Servicios
         url: bmut/antsastre/services/
         icon: icon-book
+    Info:
+        label: info
+        url: bmut/antsastre/infos/update/1
+        icon: icon-exclamation-circle

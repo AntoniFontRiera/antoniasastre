@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: Titulo
+        span: full
+        type: text
+    text:
+        label: Texto
+        size: huge
+        span: full
+        type: textarea
