@@ -8,3 +8,27 @@ fields:
         size: huge
         span: full
         type: textarea
+    street:
+        label: Carrer
+        span: auto
+        type: text
+    postal_code:
+        label: 'Codi Postal'
+        span: auto
+        type: text
+    city:
+        label: Poble/Ciutat
+        span: auto
+        type: text
+    province:
+        label: Provincia
+        span: auto
+        type: text
+    country:
+        label: Pais
+        span: auto
+        type: text
+    telf:
+        label: Telefón
+        span: auto
+        type: text

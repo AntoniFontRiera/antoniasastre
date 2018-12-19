@@ -8,12 +8,21 @@ localeUrl[En] = "/aviso-legal"
 localeUrl[Cat] = "/aviso-legal"
 
 ==
+<?php
+use bmut\antsastre\Models\Info;
+
+function onStart(){
+
+$this['info'] = Info::get()->first();
+}
+?>
+==
 
 <article class="margeSuperiorXl margeInferiorXl bordeInferior scrollreveal">
         <div class="wrapper">
             <div class="ample60">
-                <h2>{{'Aviso Legal'|_}}</h2>
-                <p>{{'Aviso Legal Desc'|_}}</p>
+                <h2>{{info.title}}</h2>
+                <p>{{info.text}}</p>
             </div>
         </div>
     </article>

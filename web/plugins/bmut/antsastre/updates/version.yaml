@@ -15,3 +15,6 @@
 1.0.6:
     - 'Updated table bmut_antsastre_projects'
     - builder_table_update_bmut_antsastre_projects2.php
+1.0.7:
+    - 'Updated table bmut_antsastre_infos'
+    - builder_table_update_bmut_antsastre_infos.php
