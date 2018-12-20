@@ -22,6 +22,24 @@ fields:
         thumbOptions:
             mode: crop
             extension: auto
+        span: left
+        type: fileupload
+    principal_image_medium:
+        label: 'Imatge Principal Med'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    principal_image_small:
+        label: 'Imatge Principal Small'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
         span: auto
         type: fileupload
     gallery:
@@ -77,7 +95,33 @@ fields:
                     thumbOptions:
                         mode: crop
                         extension: auto
-                    span: full
+                    span: auto
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[B]'
+                    type: fileupload
+                img_slider_B_med:
+                    label: 'Slider Imatges Med'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[B]'
+                    type: fileupload
+                img_slider_B_small:
+                    label: 'Imatges Slider Small'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
                     trigger:
                         action: show
                         field: modulos
@@ -94,12 +138,38 @@ fields:
                     type: textarea
                 img_C:
                     label: 'Imagen Modulo C'
-                    mode: file
+                    mode: image
                     useCaption: true
                     thumbOptions:
                         mode: crop
                         extension: auto
                     span: right
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[C]'
+                    type: fileupload
+                img_C_med:
+                    label: 'Imatge Modul C Med'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[C]'
+                    type: fileupload
+                img_C_small:
+                    label: 'Imatge Modul C Small'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
                     trigger:
                         action: show
                         field: modulos
@@ -121,7 +191,33 @@ fields:
                     thumbOptions:
                         mode: crop
                         extension: auto
-                    span: full
+                    span: left
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[E]'
+                    type: fileupload
+                img_E_med:
+                    label: 'Imatge Modul E Medium'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
+                    trigger:
+                        action: show
+                        field: modulos
+                        condition: 'value[E]'
+                    type: fileupload
+                img_E_small:
+                    label: 'Imatge Modul E Small'
+                    mode: image
+                    useCaption: true
+                    thumbOptions:
+                        mode: crop
+                        extension: auto
+                    span: auto
                     trigger:
                         action: show
                         field: modulos

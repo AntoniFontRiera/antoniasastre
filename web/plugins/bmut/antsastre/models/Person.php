@@ -22,7 +22,9 @@ class Person extends Model
     ];
 
     public $attachOne = [
-        'employe_photo' => 'System\Models\File'
+        'employe_photo' => 'System\Models\File',
+        'employe_photo_med' => 'System\Models\File',
+        'employe_photo_small' => 'System\Models\File'
     ];
 
     /**

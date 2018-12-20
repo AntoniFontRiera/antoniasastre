@@ -14,7 +14,7 @@ html {
 }
 h1 {
   font-weight: 200;
-  font-size: 8vh;
+  font-size: 7.75vh;
   line-height: 1;
 }
 @media screen and (max-width: 1440px) {
@@ -415,8 +415,20 @@ footer ul {
   list-style: none;
   margin-left: 50%;
 }
+@media screen and (max-width: 737px) {
+  footer ul {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+  }
+}
 footer ul li {
   margin-left: -40px;
+}
+@media screen and (max-width: 737px) {
+  footer ul li {
+    line-height: 2;
+  }
 }
 #sticky {
   background: black;
@@ -488,6 +500,7 @@ nav a:hover {
 nav ul {
   list-style: none;
   text-align: center;
+  margin-left: -40px;
 }
 nav .idiomes {
   margin-bottom: 48px;
@@ -512,8 +525,8 @@ nav .navegacio li {
 }
 nav #creu {
   position: fixed;
-  top: 48px;
-  right: 48px;
+  top: 32px;
+  right: 32px;
 }
 nav #creu .material-icons {
   color: white;
@@ -657,6 +670,17 @@ nav #creu .material-icons:hover {
   .modul-6 picture,
   .modul-6 img {
     width: 50vw;
+  }
+}
+@media screen and (max-width: 737px) {
+  .modul-6 .flexContainer {
+    display: block;
+  }
+  .modul-6 .flexContainer picture,
+  .modul-6 .flexContainer img,
+  .modul-6 .flexContainer .txt {
+    width: 100%;
+    padding: 0;
   }
 }
 /*NOSOTROS*/

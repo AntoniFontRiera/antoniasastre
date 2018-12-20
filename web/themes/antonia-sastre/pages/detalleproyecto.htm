@@ -20,15 +20,10 @@ function onStart(){
 ?>
 ==
 
-<div class="modul-1 margeRelSuperiorL margeRelInferiorXl scrollreveal" style="background-image: url({{project.principal_image.getPath()}})">
+<div class="modul-1 margeRelSuperiorXl scrollreveal">
         <div class="wrapper">
             <h1 class="ample60">{{project.title}}</h1>
             <h2 class="ample60">{{project.description}}</h2>
-        </div>
-    </div>
-    <div class="modul-3 margeSuperiorL scrollreveal">
-        <div class="wrapper">
-            <h2>{{'Detalle Proyecto Descripcion'|_}} </h2>
         </div>
     </div>
 {% for modules in project.module %}
@@ -56,8 +51,8 @@ function onStart(){
                 {% for img_B in  project.img_slider_B %}
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="{{img_B.getPath()}}" media="(max-width: 420px)">
-                        <source srcset="{{img_B.getPath()}}" media="(max-width: 1024px)">
+                        <source srcset="{{project.img_slider_B_small[loop.index0].getPath()}}" media="(max-width: 420px)">
+                        <source srcset="{{project.img_slider_B_med[loop.index0].getPath()}}" media="(max-width: 1024px)">
                         <source srcset="{{img_B.getPath()}}">
                         <img srcset="{{img_B.getPath()}}" alt="Descripcio">
                     </picture>
@@ -75,8 +70,8 @@ function onStart(){
             <p>{{modules.desc_C}}</p>
         </div>
         <picture>
-            <source srcset="{{project.img_C.getPath()}}" media="(max-width: 420px)">
-            <source srcset="{{project.img_C.getPath()}}" media="(max-width: 1024px)">
+            <source srcset="{{project.img_C_small.getPath()}}" media="(max-width: 420px)">
+            <source srcset="{{project.img_C_med.getPath()}}" media="(max-width: 1024px)">
             <source srcset="{{project.img_C.getPath()}}">
             <img srcset="{{project.img_C.getPath()}}" alt="Descripcio">
         </picture>
@@ -84,18 +79,17 @@ function onStart(){
 </div>
 
     {% elseif modules.modulos == 'D' %}
-        <div class="modul-6 margeSuperiorL margeInferiorL scrollreveal">
+        <div class="modul-3 margeSuperiorL scrollreveal">
             <div class="wrapper">
-              {{modules.desc_D}}
+              <h2>{{modules.desc_D}}</h2>
             </div>
         </div>
 
     {% elseif modules.modulos == 'E' %}
-
     <div class="modul-4 margeSuperiorL scrollreveal">
     <picture>
-        <source srcset="{{project.img_E.getPath()}}" media="(max-width: 420px)">
-        <source srcset="{{project.img_E.getPath()}}" media="(max-width: 1024px)">
+        <source srcset="{{project.img_E_small.getPath()}}" media="(max-width: 420px)">
+        <source srcset="{{project.img_E_med.getPath()}}" media="(max-width: 1024px)">
         <source srcset="{{project.img_E.getPath()}}">
         <img srcset="{{project.img_E.getPath()}}" alt="Descripcio" class="imgFull scrollreveal">
     </picture>

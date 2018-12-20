@@ -8,7 +8,7 @@ use Model;
 class Info extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -19,6 +19,12 @@ class Info extends Model
      * @var array Validation rules
      */
     public $rules = [
+    ];
+
+    public $attachOne = [
+        'home_photo' => 'System\Models\File',
+        'home_photo_med' => 'System\Models\File',
+        'home_photo_small' => 'System\Models\File'
     ];
 
     /**

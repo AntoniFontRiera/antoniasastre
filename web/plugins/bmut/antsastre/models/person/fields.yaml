@@ -21,3 +21,21 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+    employe_photo_med:
+        label: 'Foto Empleat Med'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    employe_photo_small:
+        label: 'Foto Empleat Small'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

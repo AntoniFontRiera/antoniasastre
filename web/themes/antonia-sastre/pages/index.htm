@@ -5,10 +5,13 @@ is_hidden = 0
 ==
 <?php
 use bmut\antsastre\Models\Project;
+use bmut\antsastre\Models\Info;
 
 function onStart(){
 
 $this['projects'] = Project::get();
+$this['info'] = Info::get()->first();
+
 }
 ?>
 ==
@@ -19,17 +22,17 @@ $this['projects'] = Project::get();
             </div>
         </article>
         <picture class="imgFull">
-          <source srcset="{{'assets/img/img-full.jpg'|theme}}" media="(max-width: 420px)">
-          <source srcset="{{'assets/img/img-full.jpg'|theme}}" media="(max-width: 1024px)">
-          <source srcset="{{'assets/img/img-full.jpg'|theme}}">
-          <img srcset="{{'assets/img/img-full.jpg'|theme}}" alt="Descripcio">
+          <source srcset="{{info.home_photo_small.getPath()}}" media="(max-width: 420px)">
+          <source srcset="{{info.home_photo_small.getPath()}}" media="(max-width: 1024px)">
+          <source srcset="{{info.home_photo.getPath()}}">
+          <img srcset="{{info.home_photo.getPath()}}" alt="Descripcio">
       </picture>
         <article class="wrapper scrollreveal">
             <div class="about ample60 margeSuperiorXl margeInferiorXl">
                 <h6>{{'Sobre Nosotros'|_}}</h6>
                 <h2>{{'Sobre Nosotros Subtitulo'|_}}</h2>
                 <p>{{'Sobre Nosotros Descripcion'|_}}</p>
-                <a href="nosotros.html"><i class="material-icons">add</i></a>
+                <a href="{{'nosotros' | page }}"><i class="material-icons">add</i></a>
             </div>
         </article>
     </main>
@@ -38,8 +41,8 @@ $this['projects'] = Project::get();
     <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
             <picture>
-              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 420px)">
-              <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 1024px)">
+              <source srcset="{{project.principal_image_small.getPath()}}" media="(max-width: 420px)">
+              <source srcset="{{project.principal_image_medium.getPath()}}" media="(max-width: 1024px)">
               <source srcset="{{project.principal_image.getPath()}}">
               <img srcset="{{project.principal_image.getPath()}}" alt="Descripcio">
           </picture>
@@ -56,8 +59,8 @@ $this['projects'] = Project::get();
     <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
             <picture>
-                <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 420px)">
-                <source srcset="{{project.principal_image.getPath()}}" media="(max-width: 1024px)">
+                <source srcset="{{project.principal_image_small.getPath()}}" media="(max-width: 420px)">
+                <source srcset="{{project.principal_image_medium.getPath()}}" media="(max-width: 1024px)">
                 <source srcset="{{project.principal_image.getPath()}}">
                 <img srcset="{{project.principal_image.getPath()}}" alt="Descripcio">
             </picture>

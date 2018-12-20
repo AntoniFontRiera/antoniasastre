@@ -37,7 +37,7 @@ html {
 
 h1 {
     font-weight: 200;
-    font-size: 8vh;
+    font-size: 7.75vh;
     line-height: 1;
 
     @media screen and (max-width: 1440px) {
@@ -433,8 +433,18 @@ footer {
         list-style: none;
         margin-left: 50%;
 
+        @media screen and (max-width: 737px) {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+        }
+
         li {
             margin-left: -40px;
+
+            @media screen and (max-width: 737px) {
+                line-height: 2;
+            }
         }
     }
 }
@@ -513,6 +523,7 @@ nav {
     ul {
         list-style: none;
         text-align: center;
+        margin-left: -40px;
     }
 
     .idiomes {
@@ -546,8 +557,8 @@ nav {
 
     #creu {
         position: fixed;
-        top: @margeM;
-        right: @margeM;
+        top: @margeS;
+        right: @margeS;
 
         .material-icons {
             color: @colorFons;
@@ -720,7 +731,22 @@ nav {
         }
 
     }
+
+    @media screen and (max-width: 737px) {
+        .flexContainer {
+            display: block;
+
+            picture,
+            img,
+            .txt {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
 }
+
+
 
 /*NOSOTROS*/
 .empleatTxt {
