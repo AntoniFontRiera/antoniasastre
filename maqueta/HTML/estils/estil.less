@@ -61,6 +61,17 @@ h1 {
         font-size: 7vh;
     }
 
+<<<<<<< HEAD
+>>>>>>> feature/integracio
+=======
+    @media screen and (max-width: 737px) {
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: 420px) {
+        font-size: 40px;
+    }
+
 >>>>>>> feature/integracio
 }
 
@@ -69,12 +80,17 @@ h2 {
     font-size: 3vh;
     line-height: 1.1;
 
+<<<<<<< HEAD
     @media (max-width: 1440px) {
         font-size: 3vh;
     }
 
     @media (max-width: 1024px) {
         font-size: 24px;
+=======
+    @media screen and (max-width: 737px) {
+        font-size: 20px;
+>>>>>>> feature/integracio
     }
 }
 
@@ -95,6 +111,11 @@ li {
 =======
     @media screen and (max-width: 1440px) {
         font-size: 16px;
+    }
+
+    @media screen and (max-width: 737px) {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
 
@@ -136,6 +157,10 @@ footer {
         @media screen and (max-width: 1440px) {
             font-size: 40px;
 >>>>>>> feature/integracio
+        }
+
+        @media screen and (max-width: 737px) {
+            font-size: 32px;
         }
 
         &:hover {
@@ -213,7 +238,11 @@ footer a {
         font-size: 40px;
     }
 
+<<<<<<< HEAD
     @media (max-width: 1440px) {
+=======
+    @media screen and (max-width: 737px) {
+>>>>>>> feature/integracio
         font-size: 32px;
     }
 
@@ -267,19 +296,28 @@ footer a {
 
 /*TAMANYS I MARGES*/
 .ample60 {
-    max-width: 60%;
+    max-width: 60vw;
+
+    @media screen and (max-width: 1025px) {
+        max-width: 80vw;
+    }
+
 }
 
 .ample50 {
-    max-width: 50%;
+    max-width: 50vw;
 
     @media screen and (max-width: 1440px) {
-        max-width: 60%;
+        max-width: 60vw;
+    }
+
+    @media screen and (max-width: 1025px) {
+        max-width: 80vw;
     }
 }
 
 .ample40 {
-    max-width: 40%;
+    max-width: 40wv;
 }
 
 .fullHeihgt {
@@ -387,6 +425,10 @@ footer a {
     .centrarHoritzontal;
     padding-left: @margeS;
     padding-right: @margeS;
+
+    @media screen and (min-width: 2200px) {
+        max-width: 1900px;
+    }
 }
 
 /*ESTRUCTURA*/
@@ -397,14 +439,30 @@ header {
     padding-bottom: 0;
     .margeSuperiorL;
 
-    @media screen and (max-width: 1440px) {
-        .margeSuperiorS;
-    }
-
     .logo svg {
         height: 8vh;
         width: auto;
     }
+
+    @media screen and (max-width: 1440px) {
+        .margeSuperiorS;
+    }
+
+    @media screen and (max-width: 737px) {
+        .logo svg {
+            height: 48px;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .logo svg {
+            height: 40px;
+            width: auto;
+        }
+    }
+
+
 }
 
 main {
@@ -463,12 +521,16 @@ footer {
     .logo svg {
         height: 2.25vh;
         width: auto;
-        min-height: 20px;
+        min-height: 16px;
     }
 
     .material-icons {
         color: @colorFons;
         font-size: 36px;
+
+        @media screen and (max-width: 737px) {
+            font-size: 28px;
+        }
 
 
         &:hover {
@@ -547,6 +609,10 @@ nav {
             font-size: 36px;
             .transicioRapida;
 
+            @media screen and (max-width: 737px) {
+                font-size: 32px;
+            }
+
             &:hover {
                 -ms-transform: rotate(90deg);
                 -webkit-transform: rotate(90deg);
@@ -621,6 +687,12 @@ nav {
     @media screen and (max-width: 1024px) {
         width: 100%;
     }
+
+    @media screen and (max-width: 737px) {
+        padding: @margeS;
+        padding-left: @margeS;
+        padding-right: @margeS;
+    }
 }
 
 .fotoFonsFull {
@@ -631,17 +703,6 @@ nav {
 }
 
 /*MODULS*/
-
-.modul-1 {
-    background-repeat: no-repeat;
-    background-size: auto 60vh;
-    background-position: right 50vh;
-
-    @media screen and (max-width: 1440px) {
-        background-size: auto 60vh;
-        background-position: right 40vh;
-    }
-}
 
 .modul-2 {
     @media screen and (max-width: 1440px) {
@@ -675,6 +736,11 @@ nav {
 .modul-3 {
     h2 {
         margin-left: 40vw;
+
+        @media screen and (max-width: 1025px) {
+            margin-left: 0;
+            width: 80vw;
+        }
 
     }
 }
@@ -714,12 +780,23 @@ nav {
 /*NOSOTROS*/
 .empleatTxt {
     padding-left: 40%;
+
+    @media screen and (max-width: 737px) {
+        padding-left: 0;
+    }
+
 }
 
 .imgEmpleat {
     margin-left: 40%;
     width: 60%;
     height: auto;
+
+    @media screen and (max-width: 737px) {
+        margin-left: 0;
+        width: 100%;
+    }
+
 }
 
 .imgJefa {

@@ -27,6 +27,7 @@ h1 {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media (max-width: 1024px) {
   h1 {
     font-size: 5vh;
@@ -44,11 +45,24 @@ h1 {
 }
 =======
 >>>>>>> feature/integracio
+=======
+@media screen and (max-width: 737px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+>>>>>>> feature/integracio
 h2 {
   font-weight: 500;
   font-size: 3vh;
   line-height: 1.1;
 }
+<<<<<<< HEAD
 @media (max-width: 1440px) {
   h2 {
     font-size: 3vh;
@@ -57,6 +71,11 @@ h2 {
 @media (max-width: 1024px) {
   h2 {
     font-size: 24px;
+=======
+@media screen and (max-width: 737px) {
+  h2 {
+    font-size: 20px;
+>>>>>>> feature/integracio
   }
 }
 h6 {
@@ -79,7 +98,17 @@ li {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+@media screen and (max-width: 737px) {
+  p,
+  li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+>>>>>>> feature/integracio
 ::-webkit-input-placeholder {
   color: black;
 }
@@ -126,6 +155,13 @@ footer .material-icons {
   footer .material-icons {
     font-size: 40px;
 >>>>>>> feature/integracio
+  }
+}
+@media screen and (max-width: 737px) {
+  article .material-icons,
+  aside .material-icons,
+  footer .material-icons {
+    font-size: 32px;
   }
 }
 article .material-icons:hover,
@@ -215,7 +251,11 @@ footer a {
     font-size: 40px;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 1440px) {
+=======
+@media screen and (max-width: 737px) {
+>>>>>>> feature/integracio
   .material-icons {
     font-size: 32px;
   }
@@ -255,18 +295,28 @@ footer a {
 }
 /*TAMANYS I MARGES*/
 .ample60 {
-  max-width: 60%;
+  max-width: 60vw;
+}
+@media screen and (max-width: 1025px) {
+  .ample60 {
+    max-width: 80vw;
+  }
 }
 .ample50 {
-  max-width: 50%;
+  max-width: 50vw;
 }
 @media screen and (max-width: 1440px) {
   .ample50 {
-    max-width: 60%;
+    max-width: 60vw;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .ample50 {
+    max-width: 80vw;
   }
 }
 .ample40 {
-  max-width: 40%;
+  max-width: 40wv;
 }
 .fullHeihgt {
   height: 100vh;
@@ -369,6 +419,11 @@ footer a {
   padding-left: 32px;
   padding-right: 32px;
 }
+@media screen and (min-width: 2200px) {
+  .wrapper {
+    max-width: 1900px;
+  }
+}
 /*ESTRUCTURA*/
 header {
   width: auto;
@@ -381,6 +436,10 @@ header {
     padding-top: 32px;
   }
 }
+header .logo svg {
+  height: 8vh;
+  width: auto;
+}
 @media screen and (max-width: 1440px) {
   header {
     padding-top: 32px;
@@ -391,9 +450,17 @@ header {
     padding-top: 8px;
   }
 }
-header .logo svg {
-  height: 8vh;
-  width: auto;
+@media screen and (max-width: 737px) {
+  header .logo svg {
+    height: 48px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  header .logo svg {
+    height: 40px;
+    width: auto;
+  }
 }
 main {
   width: 100%;
@@ -444,11 +511,16 @@ footer ul li {
 #sticky .logo svg {
   height: 2.25vh;
   width: auto;
-  min-height: 20px;
+  min-height: 16px;
 }
 #sticky .material-icons {
   color: white;
   font-size: 36px;
+}
+@media screen and (max-width: 737px) {
+  #sticky .material-icons {
+    font-size: 28px;
+  }
 }
 #sticky .material-icons:hover {
   color: red;
@@ -519,6 +591,11 @@ nav #creu .material-icons {
   -o-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
 }
+@media screen and (max-width: 737px) {
+  nav #creu .material-icons {
+    font-size: 32px;
+  }
+}
 nav #creu .material-icons:hover {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -580,6 +657,13 @@ nav #creu .material-icons:hover {
     width: 100%;
   }
 }
+@media screen and (max-width: 737px) {
+  .llistatText {
+    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 .fotoFonsFull {
   background-repeat: no-repeat;
   background-size: cover;
@@ -587,17 +671,6 @@ nav #creu .material-icons:hover {
   min-height: 100vh;
 }
 /*MODULS*/
-.modul-1 {
-  background-repeat: no-repeat;
-  background-size: auto 60vh;
-  background-position: right 50vh;
-}
-@media screen and (max-width: 1440px) {
-  .modul-1 {
-    background-size: auto 60vh;
-    background-position: right 40vh;
-  }
-}
 @media screen and (max-width: 1440px) {
   .modul-2 .flexContainer {
     display: block;
@@ -621,6 +694,12 @@ nav #creu .material-icons:hover {
 }
 .modul-3 h2 {
   margin-left: 40vw;
+}
+@media screen and (max-width: 1025px) {
+  .modul-3 h2 {
+    margin-left: 0;
+    width: 80vw;
+  }
 }
 .modul-5 .swiper-wrapper,
 .modul-5 swiper-slide {
@@ -651,10 +730,21 @@ nav #creu .material-icons:hover {
 .empleatTxt {
   padding-left: 40%;
 }
+@media screen and (max-width: 737px) {
+  .empleatTxt {
+    padding-left: 0;
+  }
+}
 .imgEmpleat {
   margin-left: 40%;
   width: 60%;
   height: auto;
+}
+@media screen and (max-width: 737px) {
+  .imgEmpleat {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 .imgJefa {
   width: 100%;
