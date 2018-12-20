@@ -14,38 +14,14 @@ html {
 }
 h1 {
   font-weight: 200;
-  font-size: 8vh;
+  font-size: 7.75vh;
   line-height: 1;
 }
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-=======
 @media screen and (max-width: 1440px) {
->>>>>>> feature/integracio
   h1 {
     font-size: 7vh;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 5vh;
-  }
-}
-@media (max-width: 769px) {
-  h1 {
-    font-size: 3vh;
-  }
-}
-@media (max-width: 640px) {
-  h1 {
-    font-size: 32px;
-  }
-}
-=======
->>>>>>> feature/integracio
-=======
 @media screen and (max-width: 737px) {
   h1 {
     font-size: 48px;
@@ -56,26 +32,14 @@ h1 {
     font-size: 40px;
   }
 }
->>>>>>> feature/integracio
 h2 {
   font-weight: 500;
   font-size: 3vh;
   line-height: 1.1;
 }
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-  h2 {
-    font-size: 3vh;
-  }
-}
-@media (max-width: 1024px) {
-  h2 {
-    font-size: 24px;
-=======
 @media screen and (max-width: 737px) {
   h2 {
     font-size: 20px;
->>>>>>> feature/integracio
   }
 }
 h6 {
@@ -87,20 +51,12 @@ li {
   font-size: 20px;
   line-height: 2;
 }
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-=======
 @media screen and (max-width: 1440px) {
->>>>>>> feature/integracio
   p,
   li {
     font-size: 16px;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
 @media screen and (max-width: 737px) {
   p,
   li {
@@ -108,7 +64,6 @@ li {
     line-height: 1.5;
   }
 }
->>>>>>> feature/integracio
 ::-webkit-input-placeholder {
   color: black;
 }
@@ -121,7 +76,6 @@ li {
 :-moz-placeholder {
   color: black;
 }
->>>>>>> feature/integracio
 article h6,
 aside h6,
 footer h6,
@@ -143,18 +97,11 @@ footer .material-icons {
   -o-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
 }
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-  article .material-icons,
-  aside .material-icons {
-    font-size: 32px;
-=======
 @media screen and (max-width: 1440px) {
   article .material-icons,
   aside .material-icons,
   footer .material-icons {
     font-size: 40px;
->>>>>>> feature/integracio
   }
 }
 @media screen and (max-width: 737px) {
@@ -251,11 +198,7 @@ footer a {
     font-size: 40px;
   }
 }
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-=======
 @media screen and (max-width: 737px) {
->>>>>>> feature/integracio
   .material-icons {
     font-size: 32px;
   }
@@ -273,18 +216,8 @@ footer a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 769px) {
-  .alinearVerticalPare {
-    display: block;
-  }
-}
 .alinearVerticalFill {
   text-align: center;
-}
-@media (max-width: 769px) {
-  .alinearVerticalFill {
-    display: block;
-  }
 }
 .flexContainer {
   display: flex;
@@ -482,8 +415,20 @@ footer ul {
   list-style: none;
   margin-left: 50%;
 }
+@media screen and (max-width: 737px) {
+  footer ul {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+  }
+}
 footer ul li {
   margin-left: -40px;
+}
+@media screen and (max-width: 737px) {
+  footer ul li {
+    line-height: 2;
+  }
 }
 #sticky {
   background: black;
@@ -555,6 +500,7 @@ nav a:hover {
 nav ul {
   list-style: none;
   text-align: center;
+  margin-left: -40px;
 }
 nav .idiomes {
   margin-bottom: 48px;
@@ -579,8 +525,8 @@ nav .navegacio li {
 }
 nav #creu {
   position: fixed;
-  top: 48px;
-  right: 48px;
+  top: 32px;
+  right: 32px;
 }
 nav #creu .material-icons {
   color: white;
@@ -724,6 +670,17 @@ nav #creu .material-icons:hover {
   .modul-6 picture,
   .modul-6 img {
     width: 50vw;
+  }
+}
+@media screen and (max-width: 737px) {
+  .modul-6 .flexContainer {
+    display: block;
+  }
+  .modul-6 .flexContainer picture,
+  .modul-6 .flexContainer img,
+  .modul-6 .flexContainer .txt {
+    width: 100%;
+    padding: 0;
   }
 }
 /*NOSOTROS*/

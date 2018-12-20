@@ -37,33 +37,13 @@ html {
 
 h1 {
     font-weight: 200;
-    font-size: 8vh;
+    font-size: 7.75vh;
     line-height: 1;
 
-<<<<<<< HEAD
-    @media (max-width: 1440px) {
-        font-size: 7vh;
-    }
-
-    @media (max-width: 1024px) {
-        font-size: 5vh;
-    }
-
-    @media (max-width: 769px) {
-        font-size: 3vh;
-    }
-
-    @media (max-width: 640px) {
-        font-size: 32px;
-    }
-=======
     @media screen and (max-width: 1440px) {
         font-size: 7vh;
     }
 
-<<<<<<< HEAD
->>>>>>> feature/integracio
-=======
     @media screen and (max-width: 737px) {
         font-size: 48px;
     }
@@ -72,7 +52,6 @@ h1 {
         font-size: 40px;
     }
 
->>>>>>> feature/integracio
 }
 
 h2 {
@@ -80,17 +59,8 @@ h2 {
     font-size: 3vh;
     line-height: 1.1;
 
-<<<<<<< HEAD
-    @media (max-width: 1440px) {
-        font-size: 3vh;
-    }
-
-    @media (max-width: 1024px) {
-        font-size: 24px;
-=======
     @media screen and (max-width: 737px) {
         font-size: 20px;
->>>>>>> feature/integracio
     }
 }
 
@@ -104,11 +74,6 @@ li {
     font-size: 20px;
     line-height: 2;
 
-<<<<<<< HEAD
-    @media (max-width: 1440px) {
-        font-size: 16px;
-    }
-=======
     @media screen and (max-width: 1440px) {
         font-size: 16px;
     }
@@ -133,7 +98,6 @@ li {
 
 :-moz-placeholder {
     color: @colorPrimari;
->>>>>>> feature/integracio
 }
 
 article,
@@ -150,13 +114,8 @@ footer {
         font-size: 48px;
         .transicioRapida;
 
-<<<<<<< HEAD
-        @media (max-width: 1440px) {
-            font-size: 32px;
-=======
         @media screen and (max-width: 1440px) {
             font-size: 40px;
->>>>>>> feature/integracio
         }
 
         @media screen and (max-width: 737px) {
@@ -238,11 +197,7 @@ footer a {
         font-size: 40px;
     }
 
-<<<<<<< HEAD
-    @media (max-width: 1440px) {
-=======
     @media screen and (max-width: 737px) {
->>>>>>> feature/integracio
         font-size: 32px;
     }
 
@@ -263,20 +218,10 @@ footer a {
     justify-content: center;
     align-items: center;
 
-<<<<<<< HEAD
-    @media (max-width: 769px) {
-        display: block;
-    }
-=======
->>>>>>> feature/integracio
 }
 
 .alinearVerticalFill {
     text-align: center;
-
-    @media (max-width: 769px) {
-        display: block;
-    }
 }
 
 .flexContainer {
@@ -488,8 +433,18 @@ footer {
         list-style: none;
         margin-left: 50%;
 
+        @media screen and (max-width: 737px) {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+        }
+
         li {
             margin-left: -40px;
+
+            @media screen and (max-width: 737px) {
+                line-height: 2;
+            }
         }
     }
 }
@@ -568,6 +523,7 @@ nav {
     ul {
         list-style: none;
         text-align: center;
+        margin-left: -40px;
     }
 
     .idiomes {
@@ -601,8 +557,8 @@ nav {
 
     #creu {
         position: fixed;
-        top: @margeM;
-        right: @margeM;
+        top: @margeS;
+        right: @margeS;
 
         .material-icons {
             color: @colorFons;
@@ -775,7 +731,22 @@ nav {
         }
 
     }
+
+    @media screen and (max-width: 737px) {
+        .flexContainer {
+            display: block;
+
+            picture,
+            img,
+            .txt {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
 }
+
+
 
 /*NOSOTROS*/
 .empleatTxt {
