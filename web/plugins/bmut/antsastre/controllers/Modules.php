@@ -3,20 +3,18 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class Projects extends Controller
+class Modules extends Controller
 {
     public $implement = [        'Backend\Behaviors\ListController',        
-    							 'Backend\Behaviors\FormController',
-							  	 'Backend\Behaviors\RelationController'    
-				  		];
+    							 'Backend\Behaviors\FormController' 
+					    ];
     
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
-    public $relationConfig = 'config_relation.yaml';
 
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Bmut.Antsastre', 'Proyectos');
+        BackendMenu::setContext('Bmut.Antsastre', 'Module' , 'Project');
     }
 }

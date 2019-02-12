@@ -23,7 +23,7 @@ $this['projects'] = Project::get();
 {% if loop.first %}
 <main class="scrollreveal">
         <div class="margeRelSuperiorM">
-            <div class="fotoFonsFull" style="background-image:url('{{project.principal_image.getPath()}}')">
+            <div class="fotoFonsFull" style="background-image:url('{{project.gallery.getPath()}}')">
                 <div class="wrapper margeRelSuperiorL textBlanc">
                     <div class="ample60">
                         <h1>{{project.title}}</h1>
@@ -36,7 +36,7 @@ $this['projects'] = Project::get();
     </main>
     {% else %}
     {% if project.id % 2 == 0 %}
-    <aside class="llistatProjecte scrollreveal">
+    <aside class="llistatProjecte invertit scrollreveal">
         <div class="llistatFoto">
             <picture>
               <source srcset="{{project.principal_image_small.getPath()}}" media="(max-width: 420px)">
@@ -54,7 +54,7 @@ $this['projects'] = Project::get();
         </div>
     </aside>
     {% else %}
-    <aside class="llistatProjecte invertit scrollreveal">
+    <aside class="llistatProjecte scrollreveal">
         <div class="llistatFoto">
             <picture>
               <source srcset="{{project.principal_image_small.getPath()}}" media="(max-width: 420px)">
